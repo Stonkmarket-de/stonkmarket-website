@@ -1,0 +1,88 @@
+# -------------------------------------------------------------------------------------
+# Menu Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+  identifier = "posts"
+  # you can add extra information before the name (HTML format is supported), such as icons
+  pre = ""
+  # you can add extra information after the name (HTML format is supported), such as icons
+  post = ""
+  name = "📝Posts"
+  url = "/posts/"
+  # title will be shown when you hover on this menu link
+  title = ""
+  weight = 1
+  # FixIt 0.2.14 | NEW add user-defined content to menu items
+  [main.params]
+    # add css class to a specific menu item
+    class = ""
+    # whether set as a draft menu item whose function is similar to a draft post/page
+    draft = false
+    # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+    #icon = "fa-solid fa-archive"
+    # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+    type = ""
+[[main]]
+  identifier = "categories"
+  pre = ""
+  post = ""
+  name = "🗃Categories"
+  url = "/categories/"
+  title = ""
+  weight = 2
+  [main.params]
+    #icon = "fa-solid fa-th"
+
+[[main]]
+  identifier = "tools"
+  pre = ""
+  post = ""
+  name = "🐱‍💻 Tools"
+  url = "/tools/"
+  title = ""
+  weight = 3
+  [main.params]
+
+[[main]]
+  identifier = "contact"
+  pre = ""
+  post = ""
+  name = "🛸Contact"
+  url = "/contact/"
+  title = ""
+  weight = 4
+  [main.params]
+
+[[main]]
+  identifier = "support"
+  pre = ""
+  post = ""
+  name = "💵Support"
+  url = "/support/"
+  title = ""
+  weight = 5
+  [main.params]
+
+[[main]]
+  identifier = "social-media"
+  parent = "tools"
+  pre = ""
+  post = ""
+  name = "Social Media"
+  url = "/tools/social-media"
+  title = ""
+  weight = 6
+  [main.params]
+
+[[main]]
+  identifier = "search-engine"
+  parent = "tools"
+  pre = ""
+  post = ""
+  name = "Search Engine"
+  url = "/tools/search-engine"
+  title = ""
+  weight = 6
+  [main.params]
