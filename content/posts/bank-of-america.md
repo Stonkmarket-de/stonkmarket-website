@@ -52,48 +52,65 @@ dsf
 dsf
 ds
 
-
+## BAC Chart
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-BAC/" rel="noopener" target="_blank"><span class="blue-text">BAC Kurse</span></a> von TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-BAC/" rel="noopener" target="_blank"><span class="blue-text">BAC Aktienkurse</span></a> von TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
   {
-  "symbols": [
-    [
-      "NYSE:BAC|1Y"
-    ],
-    [
-      "NYSE:JPM|1Y"
-    ],
-    [
-      "NYSE:C|1Y"
-    ]
-  ],
-  "chartOnly": false,
-  "width": 100%,
-  "height": 300,
+  "symbol": "NYSE:BAC",
+  "width": 350,
+  "height": 220,
   "locale": "de_DE",
+  "dateRange": "12M",
   "colorTheme": "light",
+  "isTransparent": false,
   "autosize": false,
-  "showVolume": false,
-  "showMA": false,
-  "hideDateRanges": false,
-  "hideMarketStatus": false,
-  "hideSymbolLogo": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "fontSize": "10",
-  "noTimeScale": false,
-  "valuesTracking": "1",
-  "changeMode": "price-and-percent",
-  "chartType": "area",
-  "maLineColor": "#2962FF",
-  "maLineWidth": 1,
-  "maLength": 9,
-  "lineWidth": 2,
-  "lineType": 0
+  "largeChartUrl": ""
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+## JPM Chart
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-JPM/" rel="noopener" target="_blank"><span class="blue-text">JPM Aktienkurse</span></a> von TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "NYSE:JPM",
+  "width": 350,
+  "height": 220,
+  "locale": "de_DE",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "isTransparent": false,
+  "autosize": false,
+  "largeChartUrl": ""
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+## C Chart
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-C/" rel="noopener" target="_blank"><span class="blue-text">C Aktienkurse</span></a> von TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "NYSE:C",
+  "width": 350,
+  "height": 220,
+  "locale": "de_DE",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "isTransparent": false,
+  "autosize": false,
+  "largeChartUrl": ""
 }
   </script>
 </div>
