@@ -65,7 +65,7 @@ ds
   "locale": "de_DE",
   "dateRange": "12M",
   "colorTheme": "light",
-  "isTransparent": false,
+  "isTransparent": true,
   "autosize": false,
   "largeChartUrl": ""
 }
@@ -87,7 +87,7 @@ ds
   "locale": "de_DE",
   "dateRange": "12M",
   "colorTheme": "light",
-  "isTransparent": false,
+  "isTransparent": true,
   "autosize": false,
   "largeChartUrl": ""
 }
@@ -108,7 +108,7 @@ ds
   "locale": "de_DE",
   "dateRange": "12M",
   "colorTheme": "light",
-  "isTransparent": false,
+  "isTransparent": true,
   "autosize": false,
   "largeChartUrl": ""
 }
