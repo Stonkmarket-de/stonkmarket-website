@@ -9,7 +9,7 @@
   pre = ""
   # you can add extra information after the name (HTML format is supported), such as icons
   post = ""
-  name = "📝Posts"
+  name = "📝Artikel"
   url = "/posts/"
   # title will be shown when you hover on this menu link
   title = ""
@@ -25,10 +25,10 @@
     # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
     type = ""
 [[main]]
-  identifier = "categories"
+  identifier = "kategorien"
   pre = ""
   post = ""
-  name = "🗃Categories"
+  name = "🗃Kategorien"
   url = "/categories/"
   title = ""
   weight = 2
@@ -36,20 +36,10 @@
     #icon = "fa-solid fa-th"
 
 [[main]]
-  identifier = "tools"
-  pre = ""
-  post = ""
-  name = "🐱‍💻 Tools"
-  url = "/tools/"
-  title = ""
-  weight = 3
-  [main.params]
-
-[[main]]
   identifier = "contact"
   pre = ""
   post = ""
-  name = "🛸Contact"
+  name = "🛸Kontakt"
   url = "/contact/"
   title = ""
   weight = 4
@@ -65,24 +55,4 @@
   weight = 5
   [main.params]
 
-[[main]]
-  identifier = "social-media"
-  parent = "tools"
-  pre = ""
-  post = ""
-  name = "Social Media"
-  url = "/tools/social-media"
-  title = ""
-  weight = 6
-  [main.params]
 
-[[main]]
-  identifier = "search-engine"
-  parent = "tools"
-  pre = ""
-  post = ""
-  name = "Search Engine"
-  url = "/tools/search-engine"
-  title = ""
-  weight = 6
-  [main.params]

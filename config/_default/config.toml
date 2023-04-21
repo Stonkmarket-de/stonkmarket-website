@@ -3,11 +3,11 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Malware.to Home"
-baseURL = "https://malware.to/"
+title = "Stonkmarket"
+baseURL = "https://stonkmarket.de/"
 theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "de"
+languageCode = "de"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
