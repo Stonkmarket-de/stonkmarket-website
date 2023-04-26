@@ -29,9 +29,6 @@ toc: true
 math: false
 lightgallery: false
 message:
-repost:
-  enable: true
-  url:
 
 ---
 
@@ -39,7 +36,6 @@ Mein Plan ist es mein monatliches Einkommen mit Dividenden aufzubessern. Ich suc
 
 ## TL;DR
 Ich habe mich für Johnson & Johnson entschieden. Für mehr Infos einfach runter scrollen. 
-<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-JNJ/" rel="noopener" target="_blank"><span class="blue-text">JNJ Aktienkurse</span></a> von TradingView</div>
@@ -58,7 +54,7 @@ Ich habe mich für Johnson & Johnson entschieden. Für mehr Infos einfach runter
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
+
 
 
 ## Runde 1: Die Nadel im Aktienhaufen  
@@ -329,7 +325,6 @@ Es kann nur einen geben!
 <br>
 
 ### **Johnson & Johnson (JNJ)**
-	<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-JNJ/" rel="noopener" target="_blank"><span class="blue-text">JNJ aktueller Kurs</span></a> von TradingView</div>
@@ -343,11 +338,9 @@ Es kann nur einen geben!
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
 Als Healthcare-Unternehmen sind die Produkte von JNJ wahrscheinlich weniger von Rohstoffpreisen und Inflation betroffen, und die starke Bilanz sowie das diversifizierte Produktportfolio positionieren es trotz möglicher kurzfristiger Herausforderungen gut für langfristiges Wachstum.
 
 ### **BlackRock, Inc. (BLK)**
-  <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-BLK/" rel="noopener" target="_blank"><span class="blue-text">BLK aktueller Kurs</span></a> von TradingView</div>
@@ -361,11 +354,9 @@ Als Healthcare-Unternehmen sind die Produkte von JNJ wahrscheinlich weniger von 
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
 Als weltweit größter Vermögensverwalter hat BLK eine globale Präsenz und bietet eine Reihe von Anlageprodukten an, die Anlegern helfen können, sich an sich ändernde Marktbedingungen anzupassen. Sein niedriges Verhältnis von Schulden zu Eigenkapital und seine konsistenten Dividendenzahlungen könnten es auch zu einer relativ sicheren und stabilen Investitionsoption machen.
 
 ### **CME Group Inc. (CME)**
-  <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NASDAQ-CME/" rel="noopener" target="_blank"><span class="blue-text">CME aktueller Kurs</span></a> von TradingView</div>
@@ -379,7 +370,6 @@ Als weltweit größter Vermögensverwalter hat BLK eine globale Präsenz und bie
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
 Als führender Derivatebörsenbetreiber könnte die finanzielle Leistung von CME von wirtschaftlichen Schwankungen beeinflusst werden, aber seine etablierte Marktposition und Wettbewerbsvorteile könnten ihm helfen, schwierige Zeiten zu überstehen. Sein niedriges Verhältnis von Schulden zu Eigenkapital und seine konsistenten Dividendenzahlungen machen es auch zu einer relativ stabilen Investitionsoption.
 
 Die anderen Aktien sind auch gut, aber man muss sich auch entscheiden können. 
@@ -389,7 +379,6 @@ Die anderen Aktien sind auch gut, aber man muss sich auch entscheiden können.
 Letzten Endes habe ich mich für Johnson & Johnson entschieden. Ich habe selber super Heuschnupfen und deren Produkte sind, zumindest in Amerika, was das angeht unschlagbar. Auch beim entspannten herstellen von crystal meth gibt es für den kleinen Mann nichts besseres als Sudafed, ein Krisensicheres Geschäft! 
 Spaß bei Seite, laut discounted cash flow sind die knapp über 20% zu billig und ansonsten eine top Firma. Wachstum ist generell gerade niedrig da wir uns in einer schwierigen wirtschaftlichen Phase befinden, genau das nutze ich aus um zu kaufen. 
 
-<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/symbols/NYSE-JNJ/" rel="noopener" target="_blank"><span class="blue-text">JNJ Kurse</span></a> von TradingView</div>
@@ -433,7 +422,6 @@ Spaß bei Seite, laut discounted cash flow sind die knapp über 20% zu billig un
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
 
 Ich hab mal Bing AI gefragt:
   >Johnson & Johnson ist ein Gesundheitsunternehmen, das eine breite Palette von Produkten in den Bereichen Pharmazeutika, Medizinprodukte und Verbrauchergesundheit entwickelt und herstellt. Laut einem Artikel von The Motley Fool ist ein Grund, warum man den Kauf von Johnson & Johnson-Aktien in Betracht ziehen sollte, das stabile Geschäft des Unternehmens. Das Unternehmen verfügt über ein vielfältiges Portfolio von Produkten, die von großen Teilen der Bevölkerung täglich genutzt werden, und seine Marken sind oft so stark, dass sie seit Jahrzehnten bekannt sind.

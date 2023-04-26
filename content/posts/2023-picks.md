@@ -8,7 +8,7 @@ author:
   link:
   email:
   avatar:
-description:
+description: 
 keywords:
 license:
 comment: false
