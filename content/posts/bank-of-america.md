@@ -11,6 +11,7 @@ code:
   maxShownLines: 11
 symbol: "NYSE:BAC"
 widgetTransparent: false
+weight: 2
 ---
 
 ## Bank of America
