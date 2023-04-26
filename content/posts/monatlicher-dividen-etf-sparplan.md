@@ -39,7 +39,7 @@ Keiner mag mehr Einzelaktien, alle stehe auf ETF's. Eigentlich mag ich Einzelakt
   </script>
 </div>
 <!-- TradingView Widget END -->
-reinzuhauen leider hat SCHD keine [LEI-Nummer](https://www.bafin.de/DE/Aufsicht/VersichererPensionsfonds/Berichtspflichten/LEI/leicode_node.html)
+reinzuhauen leider hat SCHD keine LEI-Nummer.
 <br>
 <br>
 Mit dem mix der unten aufgelisteten ETF's habe ich (stand jetzt) eine Dividende von 
