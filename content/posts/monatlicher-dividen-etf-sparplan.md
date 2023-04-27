@@ -368,17 +368,45 @@ Die meisten der großen ETF's beinhlaten auch die größten Firmen. Oftmals hat 
 <!-- TradingView Widget END -->
 
 ### Beispielrechnung
-Zunächst musst du die jährlichen Dividendenzahlungen berechnen, die sich aus deinem monatlichen Investment von 125€ in die vier ETFs ergeben:
-<br>
-<br>
-VUSA: 1,37% Dividende * 125€ * 12 Monate = 205,50€ Dividenden pro Jahr<br>
-VGWL: 1,98% Dividende * 125€ * 12 Monate = 297,00€ Dividenden pro Jahr<br>
-FGEQ: 2,63% Dividende * 125€ * 12 Monate = 394,50€ Dividenden pro Jahr<br>
-EL4X: 7% Dividende * 125€ * 12 Monate = 1.050€ Dividenden pro Jahr<br>
-Insgesamt ergibt sich eine jährliche Dividendenzahlung von 1.947€.<br>
-<br>
-(500€ im Monat Eigenkapital)
+
+Ich hab mal ChatGPT gefragt wie lange ich brauche bis ich 500€ im Monat bekomme:
 <br><br>
-Wenn du diese Dividenden wieder in die ETFs investierst und von einem durchschnittlichen jährlichen Kursanstieg von 7% ausgehst, würde sich dein Kapital (Investition plus reinvestierte Dividenden) nach **etwa 30 Jahren** auf etwa 170.000€ belaufen. Wenn du dann weiterhin eine Dividendenrendite von durchschnittlich 1,99% (Durchschnitt aller ETFs) erhältst, würdest du monatlich 1.065€ netto an Dividenden verdienen (170.000€ * 1,99% / 12 Monate).
+Um dies zu berechnen, verwenden wir die durchschnittliche jährliche Rendite der vier ETFs.
 <br>
+<br>
+Durchschnittliche jährliche Rendite der vier ETFs:<br>
+(7,61% + 2,63% + 1,37% + 1,98%) / 4 = 3,3975%<br>
+<br><br>
+Die monatliche Rendite beträgt:<br>
+(1 + 0,033975)^(1/12) - 1 = 0,002797 oder 0,2797%<br>
+<br><br>
+Da Sie jeden Monat 500 Euro investieren (4 x 125 Euro) und Ihre Dividenden reinvestieren möchten, können wir die zukünftige Wertformel verwenden, um herauszufinden, wie lange es dauert, um ein Portfolio aufzubauen, das 500 Euro pro Monat an Dividenden generiert.
+<br><br>
+Ziel: 6.000 Euro jährliche Dividenden (500 Euro pro Monat)<br>
+Dividendenrendite: 3,3975% pro Jahr<br>
+<br><br>
+Zunächst berechnen wir, wie groß Ihr Portfolio sein muss, um 6.000 Euro pro Jahr an Dividenden zu generieren:
+<br><br>
+Portfolio-Größe = Ziel / Dividendenrendite = 6.000 Euro / 0,033975 = 176.634,52 Euro
+<br><br>
+Da Sie monatlich investieren und Dividenden reinvestieren, verwenden wir die zukünftige Wertformel für regelmäßige Einzahlungen:
+<br><br>
+FV = P * (((1 + r)^nt - 1) / r)
+<br><br>
+Dabei ist:<br>
+FV = Zukünftiger Wert (Portfolio-Größe, in unserem Fall 176.634,52 Euro)<br>
+P = Monatliche Investition (in unserem Fall 500 Euro)<br>
+r = Monatliche Rendite (0,2797%)<br>
+n = Anzahl der Jahre<br>
+t = Anzahl der Zeiträume pro Jahr (12 Monate)<br>
+<br><br>
+Um n zu berechnen, lösen wir die Gleichung nach n auf:
+<br><br>
+n = (log(FV * r / P + 1)) / (t * log(1 + r))
+<br><br>
+Einsetzen der Werte:
+<br><br>
+n = (log(176.634,52 * 0,002797 / 500 + 1)) / (12 * log(1 + 0,002797)) = 14,94 Jahre
+<br><br>
+Um ein monatliches Dividendeneinkommen von 500 Euro netto zu erreichen, indem Sie 125 Euro pro Monat in jeden der vier ETFs investieren und Dividenden reinvestieren, würde es unter den gegebenen Annahmen etwa 14,94 Jahre dauern. Bitte beachten Sie, dass diese Berechnung auf vereinfachten Annahmen basiert und tatsächliche Ergebnisse aufgrund von Marktschwankungen und anderen Faktoren abweichen können.
 &#129297;	&#129297;	&#129297;

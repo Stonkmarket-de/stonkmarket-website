@@ -3,11 +3,6 @@ title: Versicherung Firma Analyse
 subtitle:
 date: 2023-04-26T21:02:01+02:00
 draft: false
-author:
-  name:
-  link:
-  email:
-  avatar:
 description:
 keywords:
 license:
@@ -20,11 +15,6 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
-resources:
-  - name: featured-image
-    src: featured-image.jpg
-  - name: featured-image-preview
-    src: featured-image-preview.jpg
 toc: true
 math: false
 lightgallery: false
