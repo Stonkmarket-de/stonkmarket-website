@@ -1,7 +1,7 @@
 ---
 title: "Dips"
-subtitle: ""
-date: 2023-10-04T17:20:51+0000
+subtitle: "Fresh dips for making tendies."
+date: 2023-10-04T17:26:06+0000
 description: "The latest dips and chances to buy (not financial advice)"
 keywords: ""
 comment: false

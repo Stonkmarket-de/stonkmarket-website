@@ -24,17 +24,6 @@
     #icon = "fa-solid fa-archive"
     # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
     type = ""
-    
-[[main]]
-  identifier = "dips"
-  pre = ""
-  post = ""
-  name = "📉Dips"
-  url = "/dips/"
-  title = ""
-  weight = 2
-  [main.params]
-    #icon = "fa-solid fa-th"
 
 [[main]]
   identifier = "kategorien"
@@ -67,4 +56,13 @@
   weight = 5
   [main.params]
 
-
+[[main]]
+  identifier = "dips"
+  pre = ""
+  post = ""
+  name = "📉Dips"
+  url = "/dips/"
+  title = ""
+  weight = 5
+  [main.params]
+    #icon = "fa-solid fa-th"
