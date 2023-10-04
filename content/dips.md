@@ -1,20 +1,20 @@
 
-    ---
-    title: "Dips"
-    subtitle: ""
-    date: 2023-10-04T16:38:19+0000
-    description: "The latest dips and chances to buy (not financial advice)"
-    keywords: ""
-    comment: false
-    ---
-    <br>
-    <br>
-    
-    ## Dip's
-    The latest and greatest dips, updated at: 2023-10-04
-    
-    | Symbol | Name | Loss | Days |
-    | :----: | ---- | ---- | ---- |
+---
+title: "Dips"
+subtitle: ""
+date: 2023-10-04T17:02:53+0000
+description: "The latest dips and chances to buy (not financial advice)"
+keywords: ""
+comment: false
+---
+<br>
+<br>
+
+## Dip's
+The latest and greatest dips, updated at: 2023-10-04
+
+| Symbol | Name | Loss | Days |
+| :----: | ---- | ---- | ---- |
     |RBOT|Vicarious Surgical Inc.|-85.11428492409843|232|
 |SCHW|The Charles Schwab Corporation|-39.791151064477134|267|
 |NEE|NextEra Energy, Inc.|-38.130532369942884|260|
