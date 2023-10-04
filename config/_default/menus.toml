@@ -25,13 +25,23 @@
     # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
     type = ""
 [[main]]
+  identifier = "dips"
+  pre = ""
+  post = ""
+  name = "📉Dips"
+  url = "/dips/"
+  title = ""
+  weight = 2
+  [main.params]
+    #icon = "fa-solid fa-th"
+[[main]]
   identifier = "kategorien"
   pre = ""
   post = ""
   name = "🗃Kategorien"
   url = "/categories/"
   title = ""
-  weight = 2
+  weight = 3
   [main.params]
     #icon = "fa-solid fa-th"
 
