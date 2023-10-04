@@ -47,16 +47,6 @@
   [main.params]
 
 [[main]]
-  identifier = "support"
-  pre = ""
-  post = ""
-  name = "💵Support"
-  url = "/support/"
-  title = ""
-  weight = 5
-  [main.params]
-
-[[main]]
   identifier = "dips"
   pre = ""
   post = ""
