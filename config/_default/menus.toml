@@ -47,24 +47,13 @@
   [main.params]
 
 [[main]]
-  identifier = "dips"
+  identifier = "dipfinder"
   pre = ""
   post = ""
   name = "📉Dips"
-  url = "/dips/"
+  url = "/dipfinder/"
   title = ""
   weight = 4
-  [main.params]
-    #icon = "fa-solid fa-th"
-
-[[main]]
-  identifier = "tools"
-  pre = ""
-  post = ""
-  name = "Tools"
-  url = "/tools/"
-  title = ""
-  weight = 5
   [main.params]
     #icon = "fa-solid fa-th"
 
