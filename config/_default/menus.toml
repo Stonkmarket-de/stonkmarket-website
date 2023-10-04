@@ -32,7 +32,7 @@
   name = "🗃Kategorien"
   url = "/categories/"
   title = ""
-  weight = 3
+  weight = 2
   [main.params]
     #icon = "fa-solid fa-th"
 
@@ -43,7 +43,7 @@
   name = "🛸Kontakt"
   url = "/contact/"
   title = ""
-  weight = 4
+  weight = 3
   [main.params]
 
 [[main]]
@@ -53,6 +53,17 @@
   name = "📉Dips"
   url = "/dips/"
   title = ""
-  weight = 5
+  weight = 4
   [main.params]
     #icon = "fa-solid fa-th"
+
+[[main]]
+  identifier = "support"
+  pre = ""
+  post = ""
+  name = "💵Support"
+  url = "/support/"
+  title = ""
+  weight = 5
+  [main.params]
+

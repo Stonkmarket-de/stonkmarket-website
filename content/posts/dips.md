@@ -1,13 +1,13 @@
 ---
 title: "Dips"
 subtitle: "Fresh dips for making tendies."
-date: 2023-10-04T17:37:14+0000
+date: 2023-10-04T17:26:06+0000
 description: "The latest dips and chances to buy (not financial advice)"
-keywords: 
-  - aktien
-  - preise
-  - dips
+keywords: ""
 comment: false
+weight: 3
+hiddenFromHomePage: false
+hiddenFromSearch: false
 ---
 
 <br>
