@@ -1,8 +1,7 @@
-
 ---
 title: "Dips"
 subtitle: ""
-date: 2023-10-04T17:02:53+0000
+date: 2023-10-04T17:08:52+0000
 description: "The latest dips and chances to buy (not financial advice)"
 keywords: ""
 comment: false
