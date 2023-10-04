@@ -58,12 +58,23 @@
     #icon = "fa-solid fa-th"
 
 [[main]]
+  identifier = "tools"
+  pre = ""
+  post = ""
+  name = "Tools"
+  url = "/tools/"
+  title = ""
+  weight = 5
+  [main.params]
+    #icon = "fa-solid fa-th"
+
+[[main]]
   identifier = "support"
   pre = ""
   post = ""
   name = "💵Support"
   url = "/support/"
   title = ""
-  weight = 5
+  weight = 6
   [main.params]
 
