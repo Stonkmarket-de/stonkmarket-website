@@ -17,7 +17,7 @@ keywords:
   - investment
 license:
 comment: false
-weight: 0
+weight: 3
 tags:
   - zins
   - festgeld
@@ -30,9 +30,6 @@ summary:
 toc: true
 math: false
 message:
-repost:
-  enable: true
-  url:
 ---
 
 Ich bin aktuell mal wieder auf der Suche nach neuen Möglichkeiten mein Geld anzulegen. Aktien sind aktuell zwar relativ billig unterwegs weil der Anleihenmarkt durch den hohen Zins ziemlich 🔥 ist. Irgendwann bin ich dann auf "[Weltsparen](https://www.weltsparen.de)" gestoßen (ich bekomme kein Geld und das hier ist auch keine Empfehlung).
