@@ -1,0 +1,4 @@
+Contact: mailto:hello@stonkmarket.de
+Expires: 2032-04-23T10:30:00.000Z
+Preferred-Languages: en, de
+Canonical: https://stonkmarket.de/security.txt
