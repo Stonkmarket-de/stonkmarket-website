@@ -23,958 +23,922 @@ Imagine you own a share of a company, which is like owning a tiny piece of that 
 In my case I wanted to find the longest consecutive "dip" of a stockprice regardless of temporary up's.
 
 ## Dip's
-The latest and greatest dips, updated at: **2023-11-12** (next: 2023-11-12)
+The latest and greatest dips, updated at: **2023-11-19** (next: 2023-11-19)
 
 | Symbol | Name | Loss | Days |
 | :----: | ---- | ---- | ---- |
-| [PYPL](https://finance.yahoo.com/quote/PYPL) | PYPL | -37.017% | 281 |
-| [FTNT](https://finance.yahoo.com/quote/FTNT) | FTNT | -36.697% | 117 |
-| [WBD](https://finance.yahoo.com/quote/WBD) | WBD | -36.449% | 256 |
-| [BAYN.DE](https://finance.yahoo.com/quote/BAYN.DE) | BAYN.DE | -33.053% | 275 |
-| [SCHW](https://finance.yahoo.com/quote/SCHW) | SCHW | -31.85% | 276 |
-| [PFE](https://finance.yahoo.com/quote/PFE) | PFE | -31.129% | 281 |
-| [BABA](https://finance.yahoo.com/quote/BABA) | BABA | -30.098% | 287 |
-| [HSY](https://finance.yahoo.com/quote/HSY) | HSY | -30.062% | 194 |
-| [NEE](https://finance.yahoo.com/quote/NEE) | NEE | -29.304% | 201 |
-| [TSLA](https://finance.yahoo.com/quote/TSLA) | TSLA | -26.826% | 116 |
-| [MBG.DE](https://finance.yahoo.com/quote/MBG.DE) | MBG.DE | -25.769% | 148 |
-| [TCEHY](https://finance.yahoo.com/quote/TCEHY) | TCEHY | -25.139% | 287 |
-| [MOH.DE](https://finance.yahoo.com/quote/MOH.DE) | MOH.DE | -23.29% | 201 |
-| [MS](https://finance.yahoo.com/quote/MS) | MS | -23.017% | 268 |
-| [BAC](https://finance.yahoo.com/quote/BAC) | BAC | -22.992% | 276 |
-| [DIS](https://finance.yahoo.com/quote/DIS) | DIS | -22.03% | 281 |
-| [AWK](https://finance.yahoo.com/quote/AWK) | AWK | -22.019% | 281 |
-| [MRK.DE](https://finance.yahoo.com/quote/MRK.DE) | MRK.DE | -21.699% | 284 |
-| [VOW3.DE](https://finance.yahoo.com/quote/VOW3.DE) | VOW3.DE | -21.687% | 252 |
-| [SIE.DE](https://finance.yahoo.com/quote/SIE.DE) | SIE.DE | -21.1% | 149 |
-| [RHO6.F](https://finance.yahoo.com/quote/RHO6.F) | RHO6.F | -20.823% | 158 |
-| [BMW3.DE](https://finance.yahoo.com/quote/BMW3.DE) | BMW3.DE | -20.202% | 134 |
-| [TSCO](https://finance.yahoo.com/quote/TSCO) | TSCO | -19.8% | 201 |
-| [MMM](https://finance.yahoo.com/quote/MMM) | MMM | -19.448% | 281 |
-| [T](https://finance.yahoo.com/quote/T) | T | -19.229% | 283 |
-| [BA](https://finance.yahoo.com/quote/BA) | BA | -17.668% | 103 |
-| [DTG.DE](https://finance.yahoo.com/quote/DTG.DE) | DTG.DE | -17.509% | 93 |
-| [BKN.F](https://finance.yahoo.com/quote/BKN.F) | BKN.F | -17.463% | 270 |
-| [SNW.F](https://finance.yahoo.com/quote/SNW.F) | SNW.F | -17.355% | 25 |
-| [NKE](https://finance.yahoo.com/quote/NKE) | NKE | -17.281% | 282 |
-| [C](https://finance.yahoo.com/quote/C) | C | -16.727% | 252 |
-| [CAT](https://finance.yahoo.com/quote/CAT) | CAT | -16.536% | 102 |
-| [HXL](https://finance.yahoo.com/quote/HXL) | HXL | -16.531% | 122 |
-| [DE](https://finance.yahoo.com/quote/DE) | DE | -15.912% | 109 |
-| [JNJ](https://finance.yahoo.com/quote/JNJ) | JNJ | -14.994% | 106 |
-| [SONY](https://finance.yahoo.com/quote/SONY) | SONY | -14.223% | 151 |
-| [ABBV](https://finance.yahoo.com/quote/ABBV) | ABBV | -14.173% | 200 |
-| [PEP](https://finance.yahoo.com/quote/PEP) | PEP | -13.691% | 183 |
-| [XYL](https://finance.yahoo.com/quote/XYL) | XYL | -13.617% | 109 |
-| [NET](https://finance.yahoo.com/quote/NET) | NET | -13.506% | 116 |
-| [NESM.F](https://finance.yahoo.com/quote/NESM.F) | NESM.F | -13.445% | 186 |
-| [VEOEY](https://finance.yahoo.com/quote/VEOEY) | VEOEY | -13.125% | 113 |
-| [BAS.DE](https://finance.yahoo.com/quote/BAS.DE) | BAS.DE | -12.939% | 280 |
-| [NDAQ](https://finance.yahoo.com/quote/NDAQ) | NDAQ | -12.887% | 281 |
-| [SHOP](https://finance.yahoo.com/quote/SHOP) | SHOP | -12.832% | 121 |
-| [IBKR](https://finance.yahoo.com/quote/IBKR) | IBKR | -12.808% | 61 |
-| [VNA.F](https://finance.yahoo.com/quote/VNA.F) | VNA.F | -12.495% | 281 |
-| [HD](https://finance.yahoo.com/quote/HD) | HD | -12.456% | 71 |
-| [DWNI.F](https://finance.yahoo.com/quote/DWNI.F) | DWNI.F | -12.353% | 47 |
-| [TD](https://finance.yahoo.com/quote/TD) | TD | -12.206% | 270 |
-| [BLK](https://finance.yahoo.com/quote/BLK) | BLK | -11.819% | 281 |
-| [UL](https://finance.yahoo.com/quote/UL) | UL | -11.252% | 190 |
-| [GS](https://finance.yahoo.com/quote/GS) | GS | -11.199% | 275 |
-| [NVS](https://finance.yahoo.com/quote/NVS) | NVS | -11.024% | 114 |
-| [KO](https://finance.yahoo.com/quote/KO) | KO | -10.412% | 194 |
-| [LMT](https://finance.yahoo.com/quote/LMT) | LMT | -10.082% | 207 |
-| [EADSF](https://finance.yahoo.com/quote/EADSF) | EADSF | -9.869% | 117 |
-| [MCD](https://finance.yahoo.com/quote/MCD) | MCD | -9.779% | 134 |
-| [CRM](https://finance.yahoo.com/quote/CRM) | CRM | -8.849% | 115 |
-| [PRU](https://finance.yahoo.com/quote/PRU) | PRU | -8.622% | 283 |
-| [QCOM](https://finance.yahoo.com/quote/QCOM) | QCOM | -8.473% | 282 |
-| [TSM](https://finance.yahoo.com/quote/TSM) | TSM | -8.429% | 150 |
-| [CSCO](https://finance.yahoo.com/quote/CSCO) | CSCO | -8.42% | 71 |
-| [AMD](https://finance.yahoo.com/quote/AMD) | AMD | -8.205% | 152 |
-| [ADS.DE](https://finance.yahoo.com/quote/ADS.DE) | ADS.DE | -8.049% | 68 |
-| [SBUX](https://finance.yahoo.com/quote/SBUX) | SBUX | -7.483% | 194 |
-| [ICE](https://finance.yahoo.com/quote/ICE) | ICE | -7.079% | 74 |
-| [AMGN](https://finance.yahoo.com/quote/AMGN) | AMGN | -6.822% | 26 |
-| [CL](https://finance.yahoo.com/quote/CL) | CL | -6.797% | 183 |
-| [JPM](https://finance.yahoo.com/quote/JPM) | JPM | -6.639% | 110 |
-| [NFLX](https://finance.yahoo.com/quote/NFLX) | NFLX | -6.355% | 115 |
-| [BRYN.F](https://finance.yahoo.com/quote/BRYN.F) | BRYN.F | -5.987% | 53 |
-| [EL4X.DE](https://finance.yahoo.com/quote/EL4X.DE) | EL4X.DE | -5.839% | 106 |
-| [L0CK.F](https://finance.yahoo.com/quote/L0CK.F) | L0CK.F | -5.464% | 66 |
-| [GOOG](https://finance.yahoo.com/quote/GOOG) | GOOG | -5.392% | 31 |
-| [MA](https://finance.yahoo.com/quote/MA) | MA | -5.317% | 54 |
-| [DTE.DE](https://finance.yahoo.com/quote/DTE.DE) | DTE.DE | -5.155% | 219 |
-| [LOR.DE](https://finance.yahoo.com/quote/LOR.DE) | LOR.DE | -5.112% | 204 |
-| [AAPL](https://finance.yahoo.com/quote/AAPL) | AAPL | -4.863% | 103 |
-| [EA](https://finance.yahoo.com/quote/EA) | EA | -4.715% | 109 |
-| [ALV.F](https://finance.yahoo.com/quote/ALV.F) | ALV.F | -4.56% | 53 |
-| [MELI](https://finance.yahoo.com/quote/MELI) | MELI | -4.314% | 65 |
-| [INTU](https://finance.yahoo.com/quote/INTU) | INTU | -4.299% | 65 |
-| [MUV2.DE](https://finance.yahoo.com/quote/MUV2.DE) | MUV2.DE | -3.757% | 9 |
-| [TTWO](https://finance.yahoo.com/quote/TTWO) | TTWO | -3.693% | 116 |
-| [LLY](https://finance.yahoo.com/quote/LLY) | LLY | -3.46% | 2 |
-| [FFIV](https://finance.yahoo.com/quote/FFIV) | FFIV | -3.378% | 71 |
-| [VGWL.DE](https://finance.yahoo.com/quote/VGWL.DE) | VGWL.DE | -3.154% | 107 |
-| [PG](https://finance.yahoo.com/quote/PG) | PG | -3.007% | 95 |
-| [NTDOY](https://finance.yahoo.com/quote/NTDOY) | NTDOY | -2.397% | 1 |
-| [VUSA.F](https://finance.yahoo.com/quote/VUSA.F) | VUSA.F | -2.177% | 58 |
-| [BAH](https://finance.yahoo.com/quote/BAH) | BAH | -2.098% | 26 |
-| [NVDA](https://finance.yahoo.com/quote/NVDA) | NVDA | -2.059% | 72 |
+| [FTNT](https://finance.yahoo.com/quote/FTNT) | FTNT | -36.148% | 124 |
+| [PYPL](https://finance.yahoo.com/quote/PYPL) | PYPL | -33.887% | 287 |
+| [WBD](https://finance.yahoo.com/quote/WBD) | WBD | -32.811% | 263 |
+| [BAYN.DE](https://finance.yahoo.com/quote/BAYN.DE) | BAYN.DE | -30.894% | 282 |
+| [PFE](https://finance.yahoo.com/quote/PFE) | PFE | -29.657% | 287 |
+| [SCHW](https://finance.yahoo.com/quote/SCHW) | SCHW | -28.882% | 283 |
+| [BABA](https://finance.yahoo.com/quote/BABA) | BABA | -28.453% | 281 |
+| [HSY](https://finance.yahoo.com/quote/HSY) | HSY | -27.972% | 201 |
+| [NEE](https://finance.yahoo.com/quote/NEE) | NEE | -26.445% | 208 |
+| [MBG.DE](https://finance.yahoo.com/quote/MBG.DE) | MBG.DE | -22.996% | 155 |
+| [RHO6.F](https://finance.yahoo.com/quote/RHO6.F) | RHO6.F | -21.253% | 165 |
+| [MOH.DE](https://finance.yahoo.com/quote/MOH.DE) | MOH.DE | -20.545% | 208 |
+| [TSLA](https://finance.yahoo.com/quote/TSLA) | TSLA | -20.127% | 123 |
+| [TSCO](https://finance.yahoo.com/quote/TSCO) | TSCO | -18.156% | 208 |
+| [MS](https://finance.yahoo.com/quote/MS) | MS | -17.958% | 275 |
+| [TCEHY](https://finance.yahoo.com/quote/TCEHY) | TCEHY | -17.912% | 281 |
+| [VOW3.DE](https://finance.yahoo.com/quote/VOW3.DE) | VOW3.DE | -17.774% | 259 |
+| [T](https://finance.yahoo.com/quote/T) | T | -17.371% | 219 |
+| [SNW.F](https://finance.yahoo.com/quote/SNW.F) | SNW.F | -17.336% | 32 |
+| [CSCO](https://finance.yahoo.com/quote/CSCO) | CSCO | -16.831% | 78 |
+| [NKE](https://finance.yahoo.com/quote/NKE) | NKE | -16.616% | 201 |
+| [BAC](https://finance.yahoo.com/quote/BAC) | BAC | -16.593% | 283 |
+| [BMW3.DE](https://finance.yahoo.com/quote/BMW3.DE) | BMW3.DE | -16.507% | 141 |
+| [IBKR](https://finance.yahoo.com/quote/IBKR) | IBKR | -16.174% | 68 |
+| [DIS](https://finance.yahoo.com/quote/DIS) | DIS | -15.772% | 282 |
+| [MRK.DE](https://finance.yahoo.com/quote/MRK.DE) | MRK.DE | -15.371% | 276 |
+| [BKN.F](https://finance.yahoo.com/quote/BKN.F) | BKN.F | -15.192% | 277 |
+| [HXL](https://finance.yahoo.com/quote/HXL) | HXL | -15.077% | 129 |
+| [DTG.DE](https://finance.yahoo.com/quote/DTG.DE) | DTG.DE | -14.674% | 100 |
+| [ABBV](https://finance.yahoo.com/quote/ABBV) | ABBV | -14.352% | 207 |
+| [AWK](https://finance.yahoo.com/quote/AWK) | AWK | -14.221% | 284 |
+| [MMM](https://finance.yahoo.com/quote/MMM) | MMM | -13.947% | 287 |
+| [NESM.F](https://finance.yahoo.com/quote/NESM.F) | NESM.F | -13.866% | 193 |
+| [PEP](https://finance.yahoo.com/quote/PEP) | PEP | -13.774% | 190 |
+| [DE](https://finance.yahoo.com/quote/DE) | DE | -13.628% | 116 |
+| [JNJ](https://finance.yahoo.com/quote/JNJ) | JNJ | -13.527% | 113 |
+| [BA](https://finance.yahoo.com/quote/BA) | BA | -12.899% | 110 |
+| [SONY](https://finance.yahoo.com/quote/SONY) | SONY | -12.516% | 158 |
+| [UL](https://finance.yahoo.com/quote/UL) | UL | -12.445% | 197 |
+| [CAT](https://finance.yahoo.com/quote/CAT) | CAT | -11.873% | 109 |
+| [BAS.DE](https://finance.yahoo.com/quote/BAS.DE) | BAS.DE | -11.804% | 287 |
+| [XYL](https://finance.yahoo.com/quote/XYL) | XYL | -11.248% | 116 |
+| [NDAQ](https://finance.yahoo.com/quote/NDAQ) | NDAQ | -10.567% | 287 |
+| [SIE.DE](https://finance.yahoo.com/quote/SIE.DE) | SIE.DE | -10.448% | 156 |
+| [C](https://finance.yahoo.com/quote/C) | C | -10.236% | 259 |
+| [DWNI.F](https://finance.yahoo.com/quote/DWNI.F) | DWNI.F | -10.168% | 54 |
+| [LMT](https://finance.yahoo.com/quote/LMT) | LMT | -10.12% | 214 |
+| [NVS](https://finance.yahoo.com/quote/NVS) | NVS | -9.721% | 121 |
+| [KO](https://finance.yahoo.com/quote/KO) | KO | -9.559% | 201 |
+| [TD](https://finance.yahoo.com/quote/TD) | TD | -8.629% | 277 |
+| [WMT](https://finance.yahoo.com/quote/WMT) | WMT | -8.499% | 2 |
+| [VEOEY](https://finance.yahoo.com/quote/VEOEY) | VEOEY | -7.827% | 120 |
+| [HD](https://finance.yahoo.com/quote/HD) | HD | -7.749% | 78 |
+| [GS](https://finance.yahoo.com/quote/GS) | GS | -7.467% | 282 |
+| [EADSF](https://finance.yahoo.com/quote/EADSF) | EADSF | -7.371% | 124 |
+| [MCD](https://finance.yahoo.com/quote/MCD) | MCD | -7.097% | 141 |
+| [AMGN](https://finance.yahoo.com/quote/AMGN) | AMGN | -6.764% | 33 |
+| [AMD](https://finance.yahoo.com/quote/AMD) | AMD | -6.634% | 159 |
+| [CL](https://finance.yahoo.com/quote/CL) | CL | -6.612% | 190 |
+| [TSM](https://finance.yahoo.com/quote/TSM) | TSM | -6.418% | 157 |
+| [SBUX](https://finance.yahoo.com/quote/SBUX) | SBUX | -6.383% | 201 |
+| [ICE](https://finance.yahoo.com/quote/ICE) | ICE | -5.708% | 81 |
+| [CRM](https://finance.yahoo.com/quote/CRM) | CRM | -5.611% | 122 |
+| [VNA.F](https://finance.yahoo.com/quote/VNA.F) | VNA.F | -5.58% | 288 |
+| [BRYN.F](https://finance.yahoo.com/quote/BRYN.F) | BRYN.F | -5.296% | 60 |
+| [DTE.DE](https://finance.yahoo.com/quote/DTE.DE) | DTE.DE | -4.624% | 226 |
+| [BLK](https://finance.yahoo.com/quote/BLK) | BLK | -4.563% | 117 |
+| [PRU](https://finance.yahoo.com/quote/PRU) | PRU | -4.464% | 277 |
+| [LLY](https://finance.yahoo.com/quote/LLY) | LLY | -4.252% | 9 |
+| [EA](https://finance.yahoo.com/quote/EA) | EA | -4.055% | 116 |
+| [MA](https://finance.yahoo.com/quote/MA) | MA | -3.896% | 61 |
+| [GOOG](https://finance.yahoo.com/quote/GOOG) | GOOG | -3.359% | 38 |
+| [ADS.DE](https://finance.yahoo.com/quote/ADS.DE) | ADS.DE | -3.347% | 75 |
+| [QCOM](https://finance.yahoo.com/quote/QCOM) | QCOM | -3.32% | 283 |
+| [COST](https://finance.yahoo.com/quote/COST) | COST | -3.289% | 2 |
+| [PG](https://finance.yahoo.com/quote/PG) | PG | -3.225% | 102 |
+| [AAPL](https://finance.yahoo.com/quote/AAPL) | AAPL | -3.183% | 110 |
+| [SHOP](https://finance.yahoo.com/quote/SHOP) | SHOP | -2.885% | 128 |
+| [LOR.DE](https://finance.yahoo.com/quote/LOR.DE) | LOR.DE | -2.844% | 211 |
+| [L0CK.F](https://finance.yahoo.com/quote/L0CK.F) | L0CK.F | -2.679% | 73 |
+| [JPM](https://finance.yahoo.com/quote/JPM) | JPM | -2.565% | 117 |
+| [NFLX](https://finance.yahoo.com/quote/NFLX) | NFLX | -2.446% | 122 |
+| [ALV.F](https://finance.yahoo.com/quote/ALV.F) | ALV.F | -2.269% | 60 |
+| [MUV2.DE](https://finance.yahoo.com/quote/MUV2.DE) | MUV2.DE | -2.073% | 16 |
+| [EL4X.DE](https://finance.yahoo.com/quote/EL4X.DE) | EL4X.DE | -2.032% | 113 |
+| [NTDOY](https://finance.yahoo.com/quote/NTDOY) | NTDOY | -1.956% | 3 |
+| [BAH](https://finance.yahoo.com/quote/BAH) | BAH | -1.933% | 3 |
+| [VGWL.DE](https://finance.yahoo.com/quote/VGWL.DE) | VGWL.DE | -1.824% | 114 |
+| [VUSA.F](https://finance.yahoo.com/quote/VUSA.F) | VUSA.F | -1.772% | 65 |
 | [X010.DE](https://finance.yahoo.com/quote/X010.DE) | X010.DE | -1.763% | 69 |
-| [V](https://finance.yahoo.com/quote/V) | V | -0.942% | 71 |
-| [NVO](https://finance.yahoo.com/quote/NVO) | NVO | -0.93% | 29 |
-| [AFL](https://finance.yahoo.com/quote/AFL) | AFL | -0.912% | 8 |
-| [AMZN](https://finance.yahoo.com/quote/AMZN) | AMZN | -0.891% | 59 |
-| [WM](https://finance.yahoo.com/quote/WM) | WM | -0.505% | 134 |
+| [MSFT](https://finance.yahoo.com/quote/MSFT) | MSFT | -1.68% | 1 |
+| [MELI](https://finance.yahoo.com/quote/MELI) | MELI | -1.466% | 1 |
+| [WM](https://finance.yahoo.com/quote/WM) | WM | -1.212% | 141 |
+| [UNH](https://finance.yahoo.com/quote/UNH) | UNH | -1.157% | 4 |
+| [FFIV](https://finance.yahoo.com/quote/FFIV) | FFIV | -1.014% | 2 |
+| [CTAS](https://finance.yahoo.com/quote/CTAS) | CTAS | -0.988% | 1 |
+| [NVO](https://finance.yahoo.com/quote/NVO) | NVO | -0.734% | 36 |
+| [NVDA](https://finance.yahoo.com/quote/NVDA) | NVDA | -0.721% | 3 |
+| [AMZN](https://finance.yahoo.com/quote/AMZN) | AMZN | -0.425% | 3 |
+| [NET](https://finance.yahoo.com/quote/NET) | NET | -0.329% | 123 |
+| [TTWO](https://finance.yahoo.com/quote/TTWO) | TTWO | -0.297% | 1 |
+| [ADBE](https://finance.yahoo.com/quote/ADBE) | ADBE | -0.276% | 3 |
+| [RSG](https://finance.yahoo.com/quote/RSG) | RSG | -0.214% | 3 |
+| [IBM](https://finance.yahoo.com/quote/IBM) | IBM | -0.111% | 1 |
+| [AFL](https://finance.yahoo.com/quote/AFL) | AFL | -0.061% | 3 |
 | [ATVI](https://finance.yahoo.com/quote/ATVI) | ATVI | -0.053% | 9 |
-| [AVGO](https://finance.yahoo.com/quote/AVGO) | AVGO | 0.0% | 0 |
-| [WMT](https://finance.yahoo.com/quote/WMT) | WMT | 0.0% | 0 |
-| [MSFT](https://finance.yahoo.com/quote/MSFT) | MSFT | 0.0% | 0 |
-| [ADBE](https://finance.yahoo.com/quote/ADBE) | ADBE | 0.0% | 0 |
-| [COST](https://finance.yahoo.com/quote/COST) | COST | 0.0% | 0 |
-| [IBM](https://finance.yahoo.com/quote/IBM) | IBM | 0.0% | 0 |
+| [INTU](https://finance.yahoo.com/quote/INTU) | INTU | 0.0% | 0 |
 | [SAP.F](https://finance.yahoo.com/quote/SAP.F) | SAP.F | 0.0% | 0 |
-| [UNH](https://finance.yahoo.com/quote/UNH) | UNH | 0.0% | 0 |
-| [RSG](https://finance.yahoo.com/quote/RSG) | RSG | 0.0% | 0 |
-| [CTAS](https://finance.yahoo.com/quote/CTAS) | CTAS | 0.0% | 0 |
+| [AVGO](https://finance.yahoo.com/quote/AVGO) | AVGO | 0.0% | 0 |
+| [V](https://finance.yahoo.com/quote/V) | V | 0.0% | 0 |
 ## Charts
 Here are some more graphical details on the aove data.
-
-#### PYPL Info
-- Yahoo Finance Link: [PYPL](https://finance.yahoo.com/quote/PYPL)
-- Name: PYPL
-- Days: 281
-- Total "dip": -37.017% 
-#### PYPL Chart
-![Chart of the last 281 days of PYPL's stockprice](/charts/PYPL.webp)
-___
 
 #### FTNT Info
 - Yahoo Finance Link: [FTNT](https://finance.yahoo.com/quote/FTNT)
 - Name: FTNT
-- Days: 117
-- Total "dip": -36.697% 
+- Days: 124
+- Total "dip": -36.148% 
 #### FTNT Chart
-![Chart of the last 117 days of FTNT's stockprice](/charts/FTNT.webp)
+![Chart of the last 124 days of FTNT's stockprice](/charts/FTNT.webp)
+___
+
+#### PYPL Info
+- Yahoo Finance Link: [PYPL](https://finance.yahoo.com/quote/PYPL)
+- Name: PYPL
+- Days: 287
+- Total "dip": -33.887% 
+#### PYPL Chart
+![Chart of the last 287 days of PYPL's stockprice](/charts/PYPL.webp)
 ___
 
 #### WBD Info
 - Yahoo Finance Link: [WBD](https://finance.yahoo.com/quote/WBD)
 - Name: WBD
-- Days: 256
-- Total "dip": -36.449% 
+- Days: 263
+- Total "dip": -32.811% 
 #### WBD Chart
-![Chart of the last 256 days of WBD's stockprice](/charts/WBD.webp)
+![Chart of the last 263 days of WBD's stockprice](/charts/WBD.webp)
 ___
 
 #### BAYN.DE Info
 - Yahoo Finance Link: [BAYN.DE](https://finance.yahoo.com/quote/BAYN.DE)
 - Name: BAYN.DE
-- Days: 275
-- Total "dip": -33.053% 
+- Days: 282
+- Total "dip": -30.894% 
 #### BAYN.DE Chart
-![Chart of the last 275 days of BAYN.DE's stockprice](/charts/BAYN.DE.webp)
-___
-
-#### SCHW Info
-- Yahoo Finance Link: [SCHW](https://finance.yahoo.com/quote/SCHW)
-- Name: SCHW
-- Days: 276
-- Total "dip": -31.85% 
-#### SCHW Chart
-![Chart of the last 276 days of SCHW's stockprice](/charts/SCHW.webp)
+![Chart of the last 282 days of BAYN.DE's stockprice](/charts/BAYN.DE.webp)
 ___
 
 #### PFE Info
 - Yahoo Finance Link: [PFE](https://finance.yahoo.com/quote/PFE)
 - Name: PFE
-- Days: 281
-- Total "dip": -31.129% 
+- Days: 287
+- Total "dip": -29.657% 
 #### PFE Chart
-![Chart of the last 281 days of PFE's stockprice](/charts/PFE.webp)
+![Chart of the last 287 days of PFE's stockprice](/charts/PFE.webp)
+___
+
+#### SCHW Info
+- Yahoo Finance Link: [SCHW](https://finance.yahoo.com/quote/SCHW)
+- Name: SCHW
+- Days: 283
+- Total "dip": -28.882% 
+#### SCHW Chart
+![Chart of the last 283 days of SCHW's stockprice](/charts/SCHW.webp)
 ___
 
 #### BABA Info
 - Yahoo Finance Link: [BABA](https://finance.yahoo.com/quote/BABA)
 - Name: BABA
-- Days: 287
-- Total "dip": -30.098% 
+- Days: 281
+- Total "dip": -28.453% 
 #### BABA Chart
-![Chart of the last 287 days of BABA's stockprice](/charts/BABA.webp)
+![Chart of the last 281 days of BABA's stockprice](/charts/BABA.webp)
 ___
 
 #### HSY Info
 - Yahoo Finance Link: [HSY](https://finance.yahoo.com/quote/HSY)
 - Name: HSY
-- Days: 194
-- Total "dip": -30.062% 
+- Days: 201
+- Total "dip": -27.972% 
 #### HSY Chart
-![Chart of the last 194 days of HSY's stockprice](/charts/HSY.webp)
+![Chart of the last 201 days of HSY's stockprice](/charts/HSY.webp)
 ___
 
 #### NEE Info
 - Yahoo Finance Link: [NEE](https://finance.yahoo.com/quote/NEE)
 - Name: NEE
-- Days: 201
-- Total "dip": -29.304% 
+- Days: 208
+- Total "dip": -26.445% 
 #### NEE Chart
-![Chart of the last 201 days of NEE's stockprice](/charts/NEE.webp)
-___
-
-#### TSLA Info
-- Yahoo Finance Link: [TSLA](https://finance.yahoo.com/quote/TSLA)
-- Name: TSLA
-- Days: 116
-- Total "dip": -26.826% 
-#### TSLA Chart
-![Chart of the last 116 days of TSLA's stockprice](/charts/TSLA.webp)
+![Chart of the last 208 days of NEE's stockprice](/charts/NEE.webp)
 ___
 
 #### MBG.DE Info
 - Yahoo Finance Link: [MBG.DE](https://finance.yahoo.com/quote/MBG.DE)
 - Name: MBG.DE
-- Days: 148
-- Total "dip": -25.769% 
+- Days: 155
+- Total "dip": -22.996% 
 #### MBG.DE Chart
-![Chart of the last 148 days of MBG.DE's stockprice](/charts/MBG.DE.webp)
-___
-
-#### TCEHY Info
-- Yahoo Finance Link: [TCEHY](https://finance.yahoo.com/quote/TCEHY)
-- Name: TCEHY
-- Days: 287
-- Total "dip": -25.139% 
-#### TCEHY Chart
-![Chart of the last 287 days of TCEHY's stockprice](/charts/TCEHY.webp)
-___
-
-#### MOH.DE Info
-- Yahoo Finance Link: [MOH.DE](https://finance.yahoo.com/quote/MOH.DE)
-- Name: MOH.DE
-- Days: 201
-- Total "dip": -23.29% 
-#### MOH.DE Chart
-![Chart of the last 201 days of MOH.DE's stockprice](/charts/MOH.DE.webp)
-___
-
-#### MS Info
-- Yahoo Finance Link: [MS](https://finance.yahoo.com/quote/MS)
-- Name: MS
-- Days: 268
-- Total "dip": -23.017% 
-#### MS Chart
-![Chart of the last 268 days of MS's stockprice](/charts/MS.webp)
-___
-
-#### BAC Info
-- Yahoo Finance Link: [BAC](https://finance.yahoo.com/quote/BAC)
-- Name: BAC
-- Days: 276
-- Total "dip": -22.992% 
-#### BAC Chart
-![Chart of the last 276 days of BAC's stockprice](/charts/BAC.webp)
-___
-
-#### DIS Info
-- Yahoo Finance Link: [DIS](https://finance.yahoo.com/quote/DIS)
-- Name: DIS
-- Days: 281
-- Total "dip": -22.03% 
-#### DIS Chart
-![Chart of the last 281 days of DIS's stockprice](/charts/DIS.webp)
-___
-
-#### AWK Info
-- Yahoo Finance Link: [AWK](https://finance.yahoo.com/quote/AWK)
-- Name: AWK
-- Days: 281
-- Total "dip": -22.019% 
-#### AWK Chart
-![Chart of the last 281 days of AWK's stockprice](/charts/AWK.webp)
-___
-
-#### MRK.DE Info
-- Yahoo Finance Link: [MRK.DE](https://finance.yahoo.com/quote/MRK.DE)
-- Name: MRK.DE
-- Days: 284
-- Total "dip": -21.699% 
-#### MRK.DE Chart
-![Chart of the last 284 days of MRK.DE's stockprice](/charts/MRK.DE.webp)
-___
-
-#### VOW3.DE Info
-- Yahoo Finance Link: [VOW3.DE](https://finance.yahoo.com/quote/VOW3.DE)
-- Name: VOW3.DE
-- Days: 252
-- Total "dip": -21.687% 
-#### VOW3.DE Chart
-![Chart of the last 252 days of VOW3.DE's stockprice](/charts/VOW3.DE.webp)
-___
-
-#### SIE.DE Info
-- Yahoo Finance Link: [SIE.DE](https://finance.yahoo.com/quote/SIE.DE)
-- Name: SIE.DE
-- Days: 149
-- Total "dip": -21.1% 
-#### SIE.DE Chart
-![Chart of the last 149 days of SIE.DE's stockprice](/charts/SIE.DE.webp)
+![Chart of the last 155 days of MBG.DE's stockprice](/charts/MBG.DE.webp)
 ___
 
 #### RHO6.F Info
 - Yahoo Finance Link: [RHO6.F](https://finance.yahoo.com/quote/RHO6.F)
 - Name: RHO6.F
-- Days: 158
-- Total "dip": -20.823% 
+- Days: 165
+- Total "dip": -21.253% 
 #### RHO6.F Chart
-![Chart of the last 158 days of RHO6.F's stockprice](/charts/RHO6.F.webp)
+![Chart of the last 165 days of RHO6.F's stockprice](/charts/RHO6.F.webp)
 ___
 
-#### BMW3.DE Info
-- Yahoo Finance Link: [BMW3.DE](https://finance.yahoo.com/quote/BMW3.DE)
-- Name: BMW3.DE
-- Days: 134
-- Total "dip": -20.202% 
-#### BMW3.DE Chart
-![Chart of the last 134 days of BMW3.DE's stockprice](/charts/BMW3.DE.webp)
+#### MOH.DE Info
+- Yahoo Finance Link: [MOH.DE](https://finance.yahoo.com/quote/MOH.DE)
+- Name: MOH.DE
+- Days: 208
+- Total "dip": -20.545% 
+#### MOH.DE Chart
+![Chart of the last 208 days of MOH.DE's stockprice](/charts/MOH.DE.webp)
+___
+
+#### TSLA Info
+- Yahoo Finance Link: [TSLA](https://finance.yahoo.com/quote/TSLA)
+- Name: TSLA
+- Days: 123
+- Total "dip": -20.127% 
+#### TSLA Chart
+![Chart of the last 123 days of TSLA's stockprice](/charts/TSLA.webp)
 ___
 
 #### TSCO Info
 - Yahoo Finance Link: [TSCO](https://finance.yahoo.com/quote/TSCO)
 - Name: TSCO
-- Days: 201
-- Total "dip": -19.8% 
+- Days: 208
+- Total "dip": -18.156% 
 #### TSCO Chart
-![Chart of the last 201 days of TSCO's stockprice](/charts/TSCO.webp)
+![Chart of the last 208 days of TSCO's stockprice](/charts/TSCO.webp)
 ___
 
-#### MMM Info
-- Yahoo Finance Link: [MMM](https://finance.yahoo.com/quote/MMM)
-- Name: MMM
+#### MS Info
+- Yahoo Finance Link: [MS](https://finance.yahoo.com/quote/MS)
+- Name: MS
+- Days: 275
+- Total "dip": -17.958% 
+#### MS Chart
+![Chart of the last 275 days of MS's stockprice](/charts/MS.webp)
+___
+
+#### TCEHY Info
+- Yahoo Finance Link: [TCEHY](https://finance.yahoo.com/quote/TCEHY)
+- Name: TCEHY
 - Days: 281
-- Total "dip": -19.448% 
-#### MMM Chart
-![Chart of the last 281 days of MMM's stockprice](/charts/MMM.webp)
+- Total "dip": -17.912% 
+#### TCEHY Chart
+![Chart of the last 281 days of TCEHY's stockprice](/charts/TCEHY.webp)
+___
+
+#### VOW3.DE Info
+- Yahoo Finance Link: [VOW3.DE](https://finance.yahoo.com/quote/VOW3.DE)
+- Name: VOW3.DE
+- Days: 259
+- Total "dip": -17.774% 
+#### VOW3.DE Chart
+![Chart of the last 259 days of VOW3.DE's stockprice](/charts/VOW3.DE.webp)
 ___
 
 #### T Info
 - Yahoo Finance Link: [T](https://finance.yahoo.com/quote/T)
 - Name: T
-- Days: 283
-- Total "dip": -19.229% 
+- Days: 219
+- Total "dip": -17.371% 
 #### T Chart
-![Chart of the last 283 days of T's stockprice](/charts/T.webp)
-___
-
-#### BA Info
-- Yahoo Finance Link: [BA](https://finance.yahoo.com/quote/BA)
-- Name: BA
-- Days: 103
-- Total "dip": -17.668% 
-#### BA Chart
-![Chart of the last 103 days of BA's stockprice](/charts/BA.webp)
-___
-
-#### DTG.DE Info
-- Yahoo Finance Link: [DTG.DE](https://finance.yahoo.com/quote/DTG.DE)
-- Name: DTG.DE
-- Days: 93
-- Total "dip": -17.509% 
-#### DTG.DE Chart
-![Chart of the last 93 days of DTG.DE's stockprice](/charts/DTG.DE.webp)
-___
-
-#### BKN.F Info
-- Yahoo Finance Link: [BKN.F](https://finance.yahoo.com/quote/BKN.F)
-- Name: BKN.F
-- Days: 270
-- Total "dip": -17.463% 
-#### BKN.F Chart
-![Chart of the last 270 days of BKN.F's stockprice](/charts/BKN.F.webp)
+![Chart of the last 219 days of T's stockprice](/charts/T.webp)
 ___
 
 #### SNW.F Info
 - Yahoo Finance Link: [SNW.F](https://finance.yahoo.com/quote/SNW.F)
 - Name: SNW.F
-- Days: 25
-- Total "dip": -17.355% 
+- Days: 32
+- Total "dip": -17.336% 
 #### SNW.F Chart
-![Chart of the last 25 days of SNW.F's stockprice](/charts/SNW.F.webp)
-___
-
-#### NKE Info
-- Yahoo Finance Link: [NKE](https://finance.yahoo.com/quote/NKE)
-- Name: NKE
-- Days: 282
-- Total "dip": -17.281% 
-#### NKE Chart
-![Chart of the last 282 days of NKE's stockprice](/charts/NKE.webp)
-___
-
-#### C Info
-- Yahoo Finance Link: [C](https://finance.yahoo.com/quote/C)
-- Name: C
-- Days: 252
-- Total "dip": -16.727% 
-#### C Chart
-![Chart of the last 252 days of C's stockprice](/charts/C.webp)
-___
-
-#### CAT Info
-- Yahoo Finance Link: [CAT](https://finance.yahoo.com/quote/CAT)
-- Name: CAT
-- Days: 102
-- Total "dip": -16.536% 
-#### CAT Chart
-![Chart of the last 102 days of CAT's stockprice](/charts/CAT.webp)
-___
-
-#### HXL Info
-- Yahoo Finance Link: [HXL](https://finance.yahoo.com/quote/HXL)
-- Name: HXL
-- Days: 122
-- Total "dip": -16.531% 
-#### HXL Chart
-![Chart of the last 122 days of HXL's stockprice](/charts/HXL.webp)
-___
-
-#### DE Info
-- Yahoo Finance Link: [DE](https://finance.yahoo.com/quote/DE)
-- Name: DE
-- Days: 109
-- Total "dip": -15.912% 
-#### DE Chart
-![Chart of the last 109 days of DE's stockprice](/charts/DE.webp)
-___
-
-#### JNJ Info
-- Yahoo Finance Link: [JNJ](https://finance.yahoo.com/quote/JNJ)
-- Name: JNJ
-- Days: 106
-- Total "dip": -14.994% 
-#### JNJ Chart
-![Chart of the last 106 days of JNJ's stockprice](/charts/JNJ.webp)
-___
-
-#### SONY Info
-- Yahoo Finance Link: [SONY](https://finance.yahoo.com/quote/SONY)
-- Name: SONY
-- Days: 151
-- Total "dip": -14.223% 
-#### SONY Chart
-![Chart of the last 151 days of SONY's stockprice](/charts/SONY.webp)
-___
-
-#### ABBV Info
-- Yahoo Finance Link: [ABBV](https://finance.yahoo.com/quote/ABBV)
-- Name: ABBV
-- Days: 200
-- Total "dip": -14.173% 
-#### ABBV Chart
-![Chart of the last 200 days of ABBV's stockprice](/charts/ABBV.webp)
-___
-
-#### PEP Info
-- Yahoo Finance Link: [PEP](https://finance.yahoo.com/quote/PEP)
-- Name: PEP
-- Days: 183
-- Total "dip": -13.691% 
-#### PEP Chart
-![Chart of the last 183 days of PEP's stockprice](/charts/PEP.webp)
-___
-
-#### XYL Info
-- Yahoo Finance Link: [XYL](https://finance.yahoo.com/quote/XYL)
-- Name: XYL
-- Days: 109
-- Total "dip": -13.617% 
-#### XYL Chart
-![Chart of the last 109 days of XYL's stockprice](/charts/XYL.webp)
-___
-
-#### NET Info
-- Yahoo Finance Link: [NET](https://finance.yahoo.com/quote/NET)
-- Name: NET
-- Days: 116
-- Total "dip": -13.506% 
-#### NET Chart
-![Chart of the last 116 days of NET's stockprice](/charts/NET.webp)
-___
-
-#### NESM.F Info
-- Yahoo Finance Link: [NESM.F](https://finance.yahoo.com/quote/NESM.F)
-- Name: NESM.F
-- Days: 186
-- Total "dip": -13.445% 
-#### NESM.F Chart
-![Chart of the last 186 days of NESM.F's stockprice](/charts/NESM.F.webp)
-___
-
-#### VEOEY Info
-- Yahoo Finance Link: [VEOEY](https://finance.yahoo.com/quote/VEOEY)
-- Name: VEOEY
-- Days: 113
-- Total "dip": -13.125% 
-#### VEOEY Chart
-![Chart of the last 113 days of VEOEY's stockprice](/charts/VEOEY.webp)
-___
-
-#### BAS.DE Info
-- Yahoo Finance Link: [BAS.DE](https://finance.yahoo.com/quote/BAS.DE)
-- Name: BAS.DE
-- Days: 280
-- Total "dip": -12.939% 
-#### BAS.DE Chart
-![Chart of the last 280 days of BAS.DE's stockprice](/charts/BAS.DE.webp)
-___
-
-#### NDAQ Info
-- Yahoo Finance Link: [NDAQ](https://finance.yahoo.com/quote/NDAQ)
-- Name: NDAQ
-- Days: 281
-- Total "dip": -12.887% 
-#### NDAQ Chart
-![Chart of the last 281 days of NDAQ's stockprice](/charts/NDAQ.webp)
-___
-
-#### SHOP Info
-- Yahoo Finance Link: [SHOP](https://finance.yahoo.com/quote/SHOP)
-- Name: SHOP
-- Days: 121
-- Total "dip": -12.832% 
-#### SHOP Chart
-![Chart of the last 121 days of SHOP's stockprice](/charts/SHOP.webp)
-___
-
-#### IBKR Info
-- Yahoo Finance Link: [IBKR](https://finance.yahoo.com/quote/IBKR)
-- Name: IBKR
-- Days: 61
-- Total "dip": -12.808% 
-#### IBKR Chart
-![Chart of the last 61 days of IBKR's stockprice](/charts/IBKR.webp)
-___
-
-#### VNA.F Info
-- Yahoo Finance Link: [VNA.F](https://finance.yahoo.com/quote/VNA.F)
-- Name: VNA.F
-- Days: 281
-- Total "dip": -12.495% 
-#### VNA.F Chart
-![Chart of the last 281 days of VNA.F's stockprice](/charts/VNA.F.webp)
-___
-
-#### HD Info
-- Yahoo Finance Link: [HD](https://finance.yahoo.com/quote/HD)
-- Name: HD
-- Days: 71
-- Total "dip": -12.456% 
-#### HD Chart
-![Chart of the last 71 days of HD's stockprice](/charts/HD.webp)
-___
-
-#### DWNI.F Info
-- Yahoo Finance Link: [DWNI.F](https://finance.yahoo.com/quote/DWNI.F)
-- Name: DWNI.F
-- Days: 47
-- Total "dip": -12.353% 
-#### DWNI.F Chart
-![Chart of the last 47 days of DWNI.F's stockprice](/charts/DWNI.F.webp)
-___
-
-#### TD Info
-- Yahoo Finance Link: [TD](https://finance.yahoo.com/quote/TD)
-- Name: TD
-- Days: 270
-- Total "dip": -12.206% 
-#### TD Chart
-![Chart of the last 270 days of TD's stockprice](/charts/TD.webp)
-___
-
-#### BLK Info
-- Yahoo Finance Link: [BLK](https://finance.yahoo.com/quote/BLK)
-- Name: BLK
-- Days: 281
-- Total "dip": -11.819% 
-#### BLK Chart
-![Chart of the last 281 days of BLK's stockprice](/charts/BLK.webp)
-___
-
-#### UL Info
-- Yahoo Finance Link: [UL](https://finance.yahoo.com/quote/UL)
-- Name: UL
-- Days: 190
-- Total "dip": -11.252% 
-#### UL Chart
-![Chart of the last 190 days of UL's stockprice](/charts/UL.webp)
-___
-
-#### GS Info
-- Yahoo Finance Link: [GS](https://finance.yahoo.com/quote/GS)
-- Name: GS
-- Days: 275
-- Total "dip": -11.199% 
-#### GS Chart
-![Chart of the last 275 days of GS's stockprice](/charts/GS.webp)
-___
-
-#### NVS Info
-- Yahoo Finance Link: [NVS](https://finance.yahoo.com/quote/NVS)
-- Name: NVS
-- Days: 114
-- Total "dip": -11.024% 
-#### NVS Chart
-![Chart of the last 114 days of NVS's stockprice](/charts/NVS.webp)
-___
-
-#### KO Info
-- Yahoo Finance Link: [KO](https://finance.yahoo.com/quote/KO)
-- Name: KO
-- Days: 194
-- Total "dip": -10.412% 
-#### KO Chart
-![Chart of the last 194 days of KO's stockprice](/charts/KO.webp)
-___
-
-#### LMT Info
-- Yahoo Finance Link: [LMT](https://finance.yahoo.com/quote/LMT)
-- Name: LMT
-- Days: 207
-- Total "dip": -10.082% 
-#### LMT Chart
-![Chart of the last 207 days of LMT's stockprice](/charts/LMT.webp)
-___
-
-#### EADSF Info
-- Yahoo Finance Link: [EADSF](https://finance.yahoo.com/quote/EADSF)
-- Name: EADSF
-- Days: 117
-- Total "dip": -9.869% 
-#### EADSF Chart
-![Chart of the last 117 days of EADSF's stockprice](/charts/EADSF.webp)
-___
-
-#### MCD Info
-- Yahoo Finance Link: [MCD](https://finance.yahoo.com/quote/MCD)
-- Name: MCD
-- Days: 134
-- Total "dip": -9.779% 
-#### MCD Chart
-![Chart of the last 134 days of MCD's stockprice](/charts/MCD.webp)
-___
-
-#### CRM Info
-- Yahoo Finance Link: [CRM](https://finance.yahoo.com/quote/CRM)
-- Name: CRM
-- Days: 115
-- Total "dip": -8.849% 
-#### CRM Chart
-![Chart of the last 115 days of CRM's stockprice](/charts/CRM.webp)
-___
-
-#### PRU Info
-- Yahoo Finance Link: [PRU](https://finance.yahoo.com/quote/PRU)
-- Name: PRU
-- Days: 283
-- Total "dip": -8.622% 
-#### PRU Chart
-![Chart of the last 283 days of PRU's stockprice](/charts/PRU.webp)
-___
-
-#### QCOM Info
-- Yahoo Finance Link: [QCOM](https://finance.yahoo.com/quote/QCOM)
-- Name: QCOM
-- Days: 282
-- Total "dip": -8.473% 
-#### QCOM Chart
-![Chart of the last 282 days of QCOM's stockprice](/charts/QCOM.webp)
-___
-
-#### TSM Info
-- Yahoo Finance Link: [TSM](https://finance.yahoo.com/quote/TSM)
-- Name: TSM
-- Days: 150
-- Total "dip": -8.429% 
-#### TSM Chart
-![Chart of the last 150 days of TSM's stockprice](/charts/TSM.webp)
+![Chart of the last 32 days of SNW.F's stockprice](/charts/SNW.F.webp)
 ___
 
 #### CSCO Info
 - Yahoo Finance Link: [CSCO](https://finance.yahoo.com/quote/CSCO)
 - Name: CSCO
-- Days: 71
-- Total "dip": -8.42% 
+- Days: 78
+- Total "dip": -16.831% 
 #### CSCO Chart
-![Chart of the last 71 days of CSCO's stockprice](/charts/CSCO.webp)
+![Chart of the last 78 days of CSCO's stockprice](/charts/CSCO.webp)
 ___
 
-#### AMD Info
-- Yahoo Finance Link: [AMD](https://finance.yahoo.com/quote/AMD)
-- Name: AMD
-- Days: 152
-- Total "dip": -8.205% 
-#### AMD Chart
-![Chart of the last 152 days of AMD's stockprice](/charts/AMD.webp)
+#### NKE Info
+- Yahoo Finance Link: [NKE](https://finance.yahoo.com/quote/NKE)
+- Name: NKE
+- Days: 201
+- Total "dip": -16.616% 
+#### NKE Chart
+![Chart of the last 201 days of NKE's stockprice](/charts/NKE.webp)
 ___
 
-#### ADS.DE Info
-- Yahoo Finance Link: [ADS.DE](https://finance.yahoo.com/quote/ADS.DE)
-- Name: ADS.DE
+#### BAC Info
+- Yahoo Finance Link: [BAC](https://finance.yahoo.com/quote/BAC)
+- Name: BAC
+- Days: 283
+- Total "dip": -16.593% 
+#### BAC Chart
+![Chart of the last 283 days of BAC's stockprice](/charts/BAC.webp)
+___
+
+#### BMW3.DE Info
+- Yahoo Finance Link: [BMW3.DE](https://finance.yahoo.com/quote/BMW3.DE)
+- Name: BMW3.DE
+- Days: 141
+- Total "dip": -16.507% 
+#### BMW3.DE Chart
+![Chart of the last 141 days of BMW3.DE's stockprice](/charts/BMW3.DE.webp)
+___
+
+#### IBKR Info
+- Yahoo Finance Link: [IBKR](https://finance.yahoo.com/quote/IBKR)
+- Name: IBKR
 - Days: 68
-- Total "dip": -8.049% 
-#### ADS.DE Chart
-![Chart of the last 68 days of ADS.DE's stockprice](/charts/ADS.DE.webp)
+- Total "dip": -16.174% 
+#### IBKR Chart
+![Chart of the last 68 days of IBKR's stockprice](/charts/IBKR.webp)
 ___
 
-#### SBUX Info
-- Yahoo Finance Link: [SBUX](https://finance.yahoo.com/quote/SBUX)
-- Name: SBUX
-- Days: 194
-- Total "dip": -7.483% 
-#### SBUX Chart
-![Chart of the last 194 days of SBUX's stockprice](/charts/SBUX.webp)
+#### DIS Info
+- Yahoo Finance Link: [DIS](https://finance.yahoo.com/quote/DIS)
+- Name: DIS
+- Days: 282
+- Total "dip": -15.772% 
+#### DIS Chart
+![Chart of the last 282 days of DIS's stockprice](/charts/DIS.webp)
 ___
 
-#### ICE Info
-- Yahoo Finance Link: [ICE](https://finance.yahoo.com/quote/ICE)
-- Name: ICE
-- Days: 74
-- Total "dip": -7.079% 
-#### ICE Chart
-![Chart of the last 74 days of ICE's stockprice](/charts/ICE.webp)
+#### MRK.DE Info
+- Yahoo Finance Link: [MRK.DE](https://finance.yahoo.com/quote/MRK.DE)
+- Name: MRK.DE
+- Days: 276
+- Total "dip": -15.371% 
+#### MRK.DE Chart
+![Chart of the last 276 days of MRK.DE's stockprice](/charts/MRK.DE.webp)
+___
+
+#### BKN.F Info
+- Yahoo Finance Link: [BKN.F](https://finance.yahoo.com/quote/BKN.F)
+- Name: BKN.F
+- Days: 277
+- Total "dip": -15.192% 
+#### BKN.F Chart
+![Chart of the last 277 days of BKN.F's stockprice](/charts/BKN.F.webp)
+___
+
+#### HXL Info
+- Yahoo Finance Link: [HXL](https://finance.yahoo.com/quote/HXL)
+- Name: HXL
+- Days: 129
+- Total "dip": -15.077% 
+#### HXL Chart
+![Chart of the last 129 days of HXL's stockprice](/charts/HXL.webp)
+___
+
+#### DTG.DE Info
+- Yahoo Finance Link: [DTG.DE](https://finance.yahoo.com/quote/DTG.DE)
+- Name: DTG.DE
+- Days: 100
+- Total "dip": -14.674% 
+#### DTG.DE Chart
+![Chart of the last 100 days of DTG.DE's stockprice](/charts/DTG.DE.webp)
+___
+
+#### ABBV Info
+- Yahoo Finance Link: [ABBV](https://finance.yahoo.com/quote/ABBV)
+- Name: ABBV
+- Days: 207
+- Total "dip": -14.352% 
+#### ABBV Chart
+![Chart of the last 207 days of ABBV's stockprice](/charts/ABBV.webp)
+___
+
+#### AWK Info
+- Yahoo Finance Link: [AWK](https://finance.yahoo.com/quote/AWK)
+- Name: AWK
+- Days: 284
+- Total "dip": -14.221% 
+#### AWK Chart
+![Chart of the last 284 days of AWK's stockprice](/charts/AWK.webp)
+___
+
+#### MMM Info
+- Yahoo Finance Link: [MMM](https://finance.yahoo.com/quote/MMM)
+- Name: MMM
+- Days: 287
+- Total "dip": -13.947% 
+#### MMM Chart
+![Chart of the last 287 days of MMM's stockprice](/charts/MMM.webp)
+___
+
+#### NESM.F Info
+- Yahoo Finance Link: [NESM.F](https://finance.yahoo.com/quote/NESM.F)
+- Name: NESM.F
+- Days: 193
+- Total "dip": -13.866% 
+#### NESM.F Chart
+![Chart of the last 193 days of NESM.F's stockprice](/charts/NESM.F.webp)
+___
+
+#### PEP Info
+- Yahoo Finance Link: [PEP](https://finance.yahoo.com/quote/PEP)
+- Name: PEP
+- Days: 190
+- Total "dip": -13.774% 
+#### PEP Chart
+![Chart of the last 190 days of PEP's stockprice](/charts/PEP.webp)
+___
+
+#### DE Info
+- Yahoo Finance Link: [DE](https://finance.yahoo.com/quote/DE)
+- Name: DE
+- Days: 116
+- Total "dip": -13.628% 
+#### DE Chart
+![Chart of the last 116 days of DE's stockprice](/charts/DE.webp)
+___
+
+#### JNJ Info
+- Yahoo Finance Link: [JNJ](https://finance.yahoo.com/quote/JNJ)
+- Name: JNJ
+- Days: 113
+- Total "dip": -13.527% 
+#### JNJ Chart
+![Chart of the last 113 days of JNJ's stockprice](/charts/JNJ.webp)
+___
+
+#### BA Info
+- Yahoo Finance Link: [BA](https://finance.yahoo.com/quote/BA)
+- Name: BA
+- Days: 110
+- Total "dip": -12.899% 
+#### BA Chart
+![Chart of the last 110 days of BA's stockprice](/charts/BA.webp)
+___
+
+#### SONY Info
+- Yahoo Finance Link: [SONY](https://finance.yahoo.com/quote/SONY)
+- Name: SONY
+- Days: 158
+- Total "dip": -12.516% 
+#### SONY Chart
+![Chart of the last 158 days of SONY's stockprice](/charts/SONY.webp)
+___
+
+#### UL Info
+- Yahoo Finance Link: [UL](https://finance.yahoo.com/quote/UL)
+- Name: UL
+- Days: 197
+- Total "dip": -12.445% 
+#### UL Chart
+![Chart of the last 197 days of UL's stockprice](/charts/UL.webp)
+___
+
+#### CAT Info
+- Yahoo Finance Link: [CAT](https://finance.yahoo.com/quote/CAT)
+- Name: CAT
+- Days: 109
+- Total "dip": -11.873% 
+#### CAT Chart
+![Chart of the last 109 days of CAT's stockprice](/charts/CAT.webp)
+___
+
+#### BAS.DE Info
+- Yahoo Finance Link: [BAS.DE](https://finance.yahoo.com/quote/BAS.DE)
+- Name: BAS.DE
+- Days: 287
+- Total "dip": -11.804% 
+#### BAS.DE Chart
+![Chart of the last 287 days of BAS.DE's stockprice](/charts/BAS.DE.webp)
+___
+
+#### XYL Info
+- Yahoo Finance Link: [XYL](https://finance.yahoo.com/quote/XYL)
+- Name: XYL
+- Days: 116
+- Total "dip": -11.248% 
+#### XYL Chart
+![Chart of the last 116 days of XYL's stockprice](/charts/XYL.webp)
+___
+
+#### NDAQ Info
+- Yahoo Finance Link: [NDAQ](https://finance.yahoo.com/quote/NDAQ)
+- Name: NDAQ
+- Days: 287
+- Total "dip": -10.567% 
+#### NDAQ Chart
+![Chart of the last 287 days of NDAQ's stockprice](/charts/NDAQ.webp)
+___
+
+#### SIE.DE Info
+- Yahoo Finance Link: [SIE.DE](https://finance.yahoo.com/quote/SIE.DE)
+- Name: SIE.DE
+- Days: 156
+- Total "dip": -10.448% 
+#### SIE.DE Chart
+![Chart of the last 156 days of SIE.DE's stockprice](/charts/SIE.DE.webp)
+___
+
+#### C Info
+- Yahoo Finance Link: [C](https://finance.yahoo.com/quote/C)
+- Name: C
+- Days: 259
+- Total "dip": -10.236% 
+#### C Chart
+![Chart of the last 259 days of C's stockprice](/charts/C.webp)
+___
+
+#### DWNI.F Info
+- Yahoo Finance Link: [DWNI.F](https://finance.yahoo.com/quote/DWNI.F)
+- Name: DWNI.F
+- Days: 54
+- Total "dip": -10.168% 
+#### DWNI.F Chart
+![Chart of the last 54 days of DWNI.F's stockprice](/charts/DWNI.F.webp)
+___
+
+#### LMT Info
+- Yahoo Finance Link: [LMT](https://finance.yahoo.com/quote/LMT)
+- Name: LMT
+- Days: 214
+- Total "dip": -10.12% 
+#### LMT Chart
+![Chart of the last 214 days of LMT's stockprice](/charts/LMT.webp)
+___
+
+#### NVS Info
+- Yahoo Finance Link: [NVS](https://finance.yahoo.com/quote/NVS)
+- Name: NVS
+- Days: 121
+- Total "dip": -9.721% 
+#### NVS Chart
+![Chart of the last 121 days of NVS's stockprice](/charts/NVS.webp)
+___
+
+#### KO Info
+- Yahoo Finance Link: [KO](https://finance.yahoo.com/quote/KO)
+- Name: KO
+- Days: 201
+- Total "dip": -9.559% 
+#### KO Chart
+![Chart of the last 201 days of KO's stockprice](/charts/KO.webp)
+___
+
+#### TD Info
+- Yahoo Finance Link: [TD](https://finance.yahoo.com/quote/TD)
+- Name: TD
+- Days: 277
+- Total "dip": -8.629% 
+#### TD Chart
+![Chart of the last 277 days of TD's stockprice](/charts/TD.webp)
+___
+
+#### WMT Info
+- Yahoo Finance Link: [WMT](https://finance.yahoo.com/quote/WMT)
+- Name: WMT
+- Days: 2
+- Total "dip": -8.499% 
+#### WMT Chart
+![Chart of the last 2 days of WMT's stockprice](/charts/WMT.webp)
+___
+
+#### VEOEY Info
+- Yahoo Finance Link: [VEOEY](https://finance.yahoo.com/quote/VEOEY)
+- Name: VEOEY
+- Days: 120
+- Total "dip": -7.827% 
+#### VEOEY Chart
+![Chart of the last 120 days of VEOEY's stockprice](/charts/VEOEY.webp)
+___
+
+#### HD Info
+- Yahoo Finance Link: [HD](https://finance.yahoo.com/quote/HD)
+- Name: HD
+- Days: 78
+- Total "dip": -7.749% 
+#### HD Chart
+![Chart of the last 78 days of HD's stockprice](/charts/HD.webp)
+___
+
+#### GS Info
+- Yahoo Finance Link: [GS](https://finance.yahoo.com/quote/GS)
+- Name: GS
+- Days: 282
+- Total "dip": -7.467% 
+#### GS Chart
+![Chart of the last 282 days of GS's stockprice](/charts/GS.webp)
+___
+
+#### EADSF Info
+- Yahoo Finance Link: [EADSF](https://finance.yahoo.com/quote/EADSF)
+- Name: EADSF
+- Days: 124
+- Total "dip": -7.371% 
+#### EADSF Chart
+![Chart of the last 124 days of EADSF's stockprice](/charts/EADSF.webp)
+___
+
+#### MCD Info
+- Yahoo Finance Link: [MCD](https://finance.yahoo.com/quote/MCD)
+- Name: MCD
+- Days: 141
+- Total "dip": -7.097% 
+#### MCD Chart
+![Chart of the last 141 days of MCD's stockprice](/charts/MCD.webp)
 ___
 
 #### AMGN Info
 - Yahoo Finance Link: [AMGN](https://finance.yahoo.com/quote/AMGN)
 - Name: AMGN
-- Days: 26
-- Total "dip": -6.822% 
+- Days: 33
+- Total "dip": -6.764% 
 #### AMGN Chart
-![Chart of the last 26 days of AMGN's stockprice](/charts/AMGN.webp)
+![Chart of the last 33 days of AMGN's stockprice](/charts/AMGN.webp)
+___
+
+#### AMD Info
+- Yahoo Finance Link: [AMD](https://finance.yahoo.com/quote/AMD)
+- Name: AMD
+- Days: 159
+- Total "dip": -6.634% 
+#### AMD Chart
+![Chart of the last 159 days of AMD's stockprice](/charts/AMD.webp)
 ___
 
 #### CL Info
 - Yahoo Finance Link: [CL](https://finance.yahoo.com/quote/CL)
 - Name: CL
-- Days: 183
-- Total "dip": -6.797% 
+- Days: 190
+- Total "dip": -6.612% 
 #### CL Chart
-![Chart of the last 183 days of CL's stockprice](/charts/CL.webp)
+![Chart of the last 190 days of CL's stockprice](/charts/CL.webp)
 ___
 
-#### JPM Info
-- Yahoo Finance Link: [JPM](https://finance.yahoo.com/quote/JPM)
-- Name: JPM
-- Days: 110
-- Total "dip": -6.639% 
-#### JPM Chart
-![Chart of the last 110 days of JPM's stockprice](/charts/JPM.webp)
+#### TSM Info
+- Yahoo Finance Link: [TSM](https://finance.yahoo.com/quote/TSM)
+- Name: TSM
+- Days: 157
+- Total "dip": -6.418% 
+#### TSM Chart
+![Chart of the last 157 days of TSM's stockprice](/charts/TSM.webp)
 ___
 
-#### NFLX Info
-- Yahoo Finance Link: [NFLX](https://finance.yahoo.com/quote/NFLX)
-- Name: NFLX
-- Days: 115
-- Total "dip": -6.355% 
-#### NFLX Chart
-![Chart of the last 115 days of NFLX's stockprice](/charts/NFLX.webp)
+#### SBUX Info
+- Yahoo Finance Link: [SBUX](https://finance.yahoo.com/quote/SBUX)
+- Name: SBUX
+- Days: 201
+- Total "dip": -6.383% 
+#### SBUX Chart
+![Chart of the last 201 days of SBUX's stockprice](/charts/SBUX.webp)
+___
+
+#### ICE Info
+- Yahoo Finance Link: [ICE](https://finance.yahoo.com/quote/ICE)
+- Name: ICE
+- Days: 81
+- Total "dip": -5.708% 
+#### ICE Chart
+![Chart of the last 81 days of ICE's stockprice](/charts/ICE.webp)
+___
+
+#### CRM Info
+- Yahoo Finance Link: [CRM](https://finance.yahoo.com/quote/CRM)
+- Name: CRM
+- Days: 122
+- Total "dip": -5.611% 
+#### CRM Chart
+![Chart of the last 122 days of CRM's stockprice](/charts/CRM.webp)
+___
+
+#### VNA.F Info
+- Yahoo Finance Link: [VNA.F](https://finance.yahoo.com/quote/VNA.F)
+- Name: VNA.F
+- Days: 288
+- Total "dip": -5.58% 
+#### VNA.F Chart
+![Chart of the last 288 days of VNA.F's stockprice](/charts/VNA.F.webp)
 ___
 
 #### BRYN.F Info
 - Yahoo Finance Link: [BRYN.F](https://finance.yahoo.com/quote/BRYN.F)
 - Name: BRYN.F
-- Days: 53
-- Total "dip": -5.987% 
+- Days: 60
+- Total "dip": -5.296% 
 #### BRYN.F Chart
-![Chart of the last 53 days of BRYN.F's stockprice](/charts/BRYN.F.webp)
-___
-
-#### EL4X.DE Info
-- Yahoo Finance Link: [EL4X.DE](https://finance.yahoo.com/quote/EL4X.DE)
-- Name: EL4X.DE
-- Days: 106
-- Total "dip": -5.839% 
-#### EL4X.DE Chart
-![Chart of the last 106 days of EL4X.DE's stockprice](/charts/EL4X.DE.webp)
-___
-
-#### L0CK.F Info
-- Yahoo Finance Link: [L0CK.F](https://finance.yahoo.com/quote/L0CK.F)
-- Name: L0CK.F
-- Days: 66
-- Total "dip": -5.464% 
-#### L0CK.F Chart
-![Chart of the last 66 days of L0CK.F's stockprice](/charts/L0CK.F.webp)
-___
-
-#### GOOG Info
-- Yahoo Finance Link: [GOOG](https://finance.yahoo.com/quote/GOOG)
-- Name: GOOG
-- Days: 31
-- Total "dip": -5.392% 
-#### GOOG Chart
-![Chart of the last 31 days of GOOG's stockprice](/charts/GOOG.webp)
-___
-
-#### MA Info
-- Yahoo Finance Link: [MA](https://finance.yahoo.com/quote/MA)
-- Name: MA
-- Days: 54
-- Total "dip": -5.317% 
-#### MA Chart
-![Chart of the last 54 days of MA's stockprice](/charts/MA.webp)
+![Chart of the last 60 days of BRYN.F's stockprice](/charts/BRYN.F.webp)
 ___
 
 #### DTE.DE Info
 - Yahoo Finance Link: [DTE.DE](https://finance.yahoo.com/quote/DTE.DE)
 - Name: DTE.DE
-- Days: 219
-- Total "dip": -5.155% 
+- Days: 226
+- Total "dip": -4.624% 
 #### DTE.DE Chart
-![Chart of the last 219 days of DTE.DE's stockprice](/charts/DTE.DE.webp)
+![Chart of the last 226 days of DTE.DE's stockprice](/charts/DTE.DE.webp)
 ___
 
-#### LOR.DE Info
-- Yahoo Finance Link: [LOR.DE](https://finance.yahoo.com/quote/LOR.DE)
-- Name: LOR.DE
-- Days: 204
-- Total "dip": -5.112% 
-#### LOR.DE Chart
-![Chart of the last 204 days of LOR.DE's stockprice](/charts/LOR.DE.webp)
+#### BLK Info
+- Yahoo Finance Link: [BLK](https://finance.yahoo.com/quote/BLK)
+- Name: BLK
+- Days: 117
+- Total "dip": -4.563% 
+#### BLK Chart
+![Chart of the last 117 days of BLK's stockprice](/charts/BLK.webp)
 ___
 
-#### AAPL Info
-- Yahoo Finance Link: [AAPL](https://finance.yahoo.com/quote/AAPL)
-- Name: AAPL
-- Days: 103
-- Total "dip": -4.863% 
-#### AAPL Chart
-![Chart of the last 103 days of AAPL's stockprice](/charts/AAPL.webp)
-___
-
-#### EA Info
-- Yahoo Finance Link: [EA](https://finance.yahoo.com/quote/EA)
-- Name: EA
-- Days: 109
-- Total "dip": -4.715% 
-#### EA Chart
-![Chart of the last 109 days of EA's stockprice](/charts/EA.webp)
-___
-
-#### ALV.F Info
-- Yahoo Finance Link: [ALV.F](https://finance.yahoo.com/quote/ALV.F)
-- Name: ALV.F
-- Days: 53
-- Total "dip": -4.56% 
-#### ALV.F Chart
-![Chart of the last 53 days of ALV.F's stockprice](/charts/ALV.F.webp)
-___
-
-#### MELI Info
-- Yahoo Finance Link: [MELI](https://finance.yahoo.com/quote/MELI)
-- Name: MELI
-- Days: 65
-- Total "dip": -4.314% 
-#### MELI Chart
-![Chart of the last 65 days of MELI's stockprice](/charts/MELI.webp)
-___
-
-#### INTU Info
-- Yahoo Finance Link: [INTU](https://finance.yahoo.com/quote/INTU)
-- Name: INTU
-- Days: 65
-- Total "dip": -4.299% 
-#### INTU Chart
-![Chart of the last 65 days of INTU's stockprice](/charts/INTU.webp)
-___
-
-#### MUV2.DE Info
-- Yahoo Finance Link: [MUV2.DE](https://finance.yahoo.com/quote/MUV2.DE)
-- Name: MUV2.DE
-- Days: 9
-- Total "dip": -3.757% 
-#### MUV2.DE Chart
-![Chart of the last 9 days of MUV2.DE's stockprice](/charts/MUV2.DE.webp)
-___
-
-#### TTWO Info
-- Yahoo Finance Link: [TTWO](https://finance.yahoo.com/quote/TTWO)
-- Name: TTWO
-- Days: 116
-- Total "dip": -3.693% 
-#### TTWO Chart
-![Chart of the last 116 days of TTWO's stockprice](/charts/TTWO.webp)
+#### PRU Info
+- Yahoo Finance Link: [PRU](https://finance.yahoo.com/quote/PRU)
+- Name: PRU
+- Days: 277
+- Total "dip": -4.464% 
+#### PRU Chart
+![Chart of the last 277 days of PRU's stockprice](/charts/PRU.webp)
 ___
 
 #### LLY Info
 - Yahoo Finance Link: [LLY](https://finance.yahoo.com/quote/LLY)
 - Name: LLY
-- Days: 2
-- Total "dip": -3.46% 
+- Days: 9
+- Total "dip": -4.252% 
 #### LLY Chart
-![Chart of the last 2 days of LLY's stockprice](/charts/LLY.webp)
+![Chart of the last 9 days of LLY's stockprice](/charts/LLY.webp)
 ___
 
-#### FFIV Info
-- Yahoo Finance Link: [FFIV](https://finance.yahoo.com/quote/FFIV)
-- Name: FFIV
-- Days: 71
-- Total "dip": -3.378% 
-#### FFIV Chart
-![Chart of the last 71 days of FFIV's stockprice](/charts/FFIV.webp)
+#### EA Info
+- Yahoo Finance Link: [EA](https://finance.yahoo.com/quote/EA)
+- Name: EA
+- Days: 116
+- Total "dip": -4.055% 
+#### EA Chart
+![Chart of the last 116 days of EA's stockprice](/charts/EA.webp)
 ___
 
-#### VGWL.DE Info
-- Yahoo Finance Link: [VGWL.DE](https://finance.yahoo.com/quote/VGWL.DE)
-- Name: VGWL.DE
-- Days: 107
-- Total "dip": -3.154% 
-#### VGWL.DE Chart
-![Chart of the last 107 days of VGWL.DE's stockprice](/charts/VGWL.DE.webp)
+#### MA Info
+- Yahoo Finance Link: [MA](https://finance.yahoo.com/quote/MA)
+- Name: MA
+- Days: 61
+- Total "dip": -3.896% 
+#### MA Chart
+![Chart of the last 61 days of MA's stockprice](/charts/MA.webp)
+___
+
+#### GOOG Info
+- Yahoo Finance Link: [GOOG](https://finance.yahoo.com/quote/GOOG)
+- Name: GOOG
+- Days: 38
+- Total "dip": -3.359% 
+#### GOOG Chart
+![Chart of the last 38 days of GOOG's stockprice](/charts/GOOG.webp)
+___
+
+#### ADS.DE Info
+- Yahoo Finance Link: [ADS.DE](https://finance.yahoo.com/quote/ADS.DE)
+- Name: ADS.DE
+- Days: 75
+- Total "dip": -3.347% 
+#### ADS.DE Chart
+![Chart of the last 75 days of ADS.DE's stockprice](/charts/ADS.DE.webp)
+___
+
+#### QCOM Info
+- Yahoo Finance Link: [QCOM](https://finance.yahoo.com/quote/QCOM)
+- Name: QCOM
+- Days: 283
+- Total "dip": -3.32% 
+#### QCOM Chart
+![Chart of the last 283 days of QCOM's stockprice](/charts/QCOM.webp)
+___
+
+#### COST Info
+- Yahoo Finance Link: [COST](https://finance.yahoo.com/quote/COST)
+- Name: COST
+- Days: 2
+- Total "dip": -3.289% 
+#### COST Chart
+![Chart of the last 2 days of COST's stockprice](/charts/COST.webp)
 ___
 
 #### PG Info
 - Yahoo Finance Link: [PG](https://finance.yahoo.com/quote/PG)
 - Name: PG
-- Days: 95
-- Total "dip": -3.007% 
+- Days: 102
+- Total "dip": -3.225% 
 #### PG Chart
-![Chart of the last 95 days of PG's stockprice](/charts/PG.webp)
+![Chart of the last 102 days of PG's stockprice](/charts/PG.webp)
+___
+
+#### AAPL Info
+- Yahoo Finance Link: [AAPL](https://finance.yahoo.com/quote/AAPL)
+- Name: AAPL
+- Days: 110
+- Total "dip": -3.183% 
+#### AAPL Chart
+![Chart of the last 110 days of AAPL's stockprice](/charts/AAPL.webp)
+___
+
+#### SHOP Info
+- Yahoo Finance Link: [SHOP](https://finance.yahoo.com/quote/SHOP)
+- Name: SHOP
+- Days: 128
+- Total "dip": -2.885% 
+#### SHOP Chart
+![Chart of the last 128 days of SHOP's stockprice](/charts/SHOP.webp)
+___
+
+#### LOR.DE Info
+- Yahoo Finance Link: [LOR.DE](https://finance.yahoo.com/quote/LOR.DE)
+- Name: LOR.DE
+- Days: 211
+- Total "dip": -2.844% 
+#### LOR.DE Chart
+![Chart of the last 211 days of LOR.DE's stockprice](/charts/LOR.DE.webp)
+___
+
+#### L0CK.F Info
+- Yahoo Finance Link: [L0CK.F](https://finance.yahoo.com/quote/L0CK.F)
+- Name: L0CK.F
+- Days: 73
+- Total "dip": -2.679% 
+#### L0CK.F Chart
+![Chart of the last 73 days of L0CK.F's stockprice](/charts/L0CK.F.webp)
+___
+
+#### JPM Info
+- Yahoo Finance Link: [JPM](https://finance.yahoo.com/quote/JPM)
+- Name: JPM
+- Days: 117
+- Total "dip": -2.565% 
+#### JPM Chart
+![Chart of the last 117 days of JPM's stockprice](/charts/JPM.webp)
+___
+
+#### NFLX Info
+- Yahoo Finance Link: [NFLX](https://finance.yahoo.com/quote/NFLX)
+- Name: NFLX
+- Days: 122
+- Total "dip": -2.446% 
+#### NFLX Chart
+![Chart of the last 122 days of NFLX's stockprice](/charts/NFLX.webp)
+___
+
+#### ALV.F Info
+- Yahoo Finance Link: [ALV.F](https://finance.yahoo.com/quote/ALV.F)
+- Name: ALV.F
+- Days: 60
+- Total "dip": -2.269% 
+#### ALV.F Chart
+![Chart of the last 60 days of ALV.F's stockprice](/charts/ALV.F.webp)
+___
+
+#### MUV2.DE Info
+- Yahoo Finance Link: [MUV2.DE](https://finance.yahoo.com/quote/MUV2.DE)
+- Name: MUV2.DE
+- Days: 16
+- Total "dip": -2.073% 
+#### MUV2.DE Chart
+![Chart of the last 16 days of MUV2.DE's stockprice](/charts/MUV2.DE.webp)
+___
+
+#### EL4X.DE Info
+- Yahoo Finance Link: [EL4X.DE](https://finance.yahoo.com/quote/EL4X.DE)
+- Name: EL4X.DE
+- Days: 113
+- Total "dip": -2.032% 
+#### EL4X.DE Chart
+![Chart of the last 113 days of EL4X.DE's stockprice](/charts/EL4X.DE.webp)
 ___
 
 #### NTDOY Info
 - Yahoo Finance Link: [NTDOY](https://finance.yahoo.com/quote/NTDOY)
 - Name: NTDOY
-- Days: 1
-- Total "dip": -2.397% 
+- Days: 3
+- Total "dip": -1.956% 
 #### NTDOY Chart
-![Chart of the last 1 days of NTDOY's stockprice](/charts/NTDOY.webp)
-___
-
-#### VUSA.F Info
-- Yahoo Finance Link: [VUSA.F](https://finance.yahoo.com/quote/VUSA.F)
-- Name: VUSA.F
-- Days: 58
-- Total "dip": -2.177% 
-#### VUSA.F Chart
-![Chart of the last 58 days of VUSA.F's stockprice](/charts/VUSA.F.webp)
+![Chart of the last 3 days of NTDOY's stockprice](/charts/NTDOY.webp)
 ___
 
 #### BAH Info
 - Yahoo Finance Link: [BAH](https://finance.yahoo.com/quote/BAH)
 - Name: BAH
-- Days: 26
-- Total "dip": -2.098% 
+- Days: 3
+- Total "dip": -1.933% 
 #### BAH Chart
-![Chart of the last 26 days of BAH's stockprice](/charts/BAH.webp)
+![Chart of the last 3 days of BAH's stockprice](/charts/BAH.webp)
 ___
 
-#### NVDA Info
-- Yahoo Finance Link: [NVDA](https://finance.yahoo.com/quote/NVDA)
-- Name: NVDA
-- Days: 72
-- Total "dip": -2.059% 
-#### NVDA Chart
-![Chart of the last 72 days of NVDA's stockprice](/charts/NVDA.webp)
+#### VGWL.DE Info
+- Yahoo Finance Link: [VGWL.DE](https://finance.yahoo.com/quote/VGWL.DE)
+- Name: VGWL.DE
+- Days: 114
+- Total "dip": -1.824% 
+#### VGWL.DE Chart
+![Chart of the last 114 days of VGWL.DE's stockprice](/charts/VGWL.DE.webp)
+___
+
+#### VUSA.F Info
+- Yahoo Finance Link: [VUSA.F](https://finance.yahoo.com/quote/VUSA.F)
+- Name: VUSA.F
+- Days: 65
+- Total "dip": -1.772% 
+#### VUSA.F Chart
+![Chart of the last 65 days of VUSA.F's stockprice](/charts/VUSA.F.webp)
 ___
 
 #### X010.DE Info
@@ -986,49 +950,139 @@ ___
 ![Chart of the last 69 days of X010.DE's stockprice](/charts/X010.DE.webp)
 ___
 
-#### V Info
-- Yahoo Finance Link: [V](https://finance.yahoo.com/quote/V)
-- Name: V
-- Days: 71
-- Total "dip": -0.942% 
-#### V Chart
-![Chart of the last 71 days of V's stockprice](/charts/V.webp)
+#### MSFT Info
+- Yahoo Finance Link: [MSFT](https://finance.yahoo.com/quote/MSFT)
+- Name: MSFT
+- Days: 1
+- Total "dip": -1.68% 
+#### MSFT Chart
+![Chart of the last 1 days of MSFT's stockprice](/charts/MSFT.webp)
 ___
 
-#### NVO Info
-- Yahoo Finance Link: [NVO](https://finance.yahoo.com/quote/NVO)
-- Name: NVO
-- Days: 29
-- Total "dip": -0.93% 
-#### NVO Chart
-![Chart of the last 29 days of NVO's stockprice](/charts/NVO.webp)
-___
-
-#### AFL Info
-- Yahoo Finance Link: [AFL](https://finance.yahoo.com/quote/AFL)
-- Name: AFL
-- Days: 8
-- Total "dip": -0.912% 
-#### AFL Chart
-![Chart of the last 8 days of AFL's stockprice](/charts/AFL.webp)
-___
-
-#### AMZN Info
-- Yahoo Finance Link: [AMZN](https://finance.yahoo.com/quote/AMZN)
-- Name: AMZN
-- Days: 59
-- Total "dip": -0.891% 
-#### AMZN Chart
-![Chart of the last 59 days of AMZN's stockprice](/charts/AMZN.webp)
+#### MELI Info
+- Yahoo Finance Link: [MELI](https://finance.yahoo.com/quote/MELI)
+- Name: MELI
+- Days: 1
+- Total "dip": -1.466% 
+#### MELI Chart
+![Chart of the last 1 days of MELI's stockprice](/charts/MELI.webp)
 ___
 
 #### WM Info
 - Yahoo Finance Link: [WM](https://finance.yahoo.com/quote/WM)
 - Name: WM
-- Days: 134
-- Total "dip": -0.505% 
+- Days: 141
+- Total "dip": -1.212% 
 #### WM Chart
-![Chart of the last 134 days of WM's stockprice](/charts/WM.webp)
+![Chart of the last 141 days of WM's stockprice](/charts/WM.webp)
+___
+
+#### UNH Info
+- Yahoo Finance Link: [UNH](https://finance.yahoo.com/quote/UNH)
+- Name: UNH
+- Days: 4
+- Total "dip": -1.157% 
+#### UNH Chart
+![Chart of the last 4 days of UNH's stockprice](/charts/UNH.webp)
+___
+
+#### FFIV Info
+- Yahoo Finance Link: [FFIV](https://finance.yahoo.com/quote/FFIV)
+- Name: FFIV
+- Days: 2
+- Total "dip": -1.014% 
+#### FFIV Chart
+![Chart of the last 2 days of FFIV's stockprice](/charts/FFIV.webp)
+___
+
+#### CTAS Info
+- Yahoo Finance Link: [CTAS](https://finance.yahoo.com/quote/CTAS)
+- Name: CTAS
+- Days: 1
+- Total "dip": -0.988% 
+#### CTAS Chart
+![Chart of the last 1 days of CTAS's stockprice](/charts/CTAS.webp)
+___
+
+#### NVO Info
+- Yahoo Finance Link: [NVO](https://finance.yahoo.com/quote/NVO)
+- Name: NVO
+- Days: 36
+- Total "dip": -0.734% 
+#### NVO Chart
+![Chart of the last 36 days of NVO's stockprice](/charts/NVO.webp)
+___
+
+#### NVDA Info
+- Yahoo Finance Link: [NVDA](https://finance.yahoo.com/quote/NVDA)
+- Name: NVDA
+- Days: 3
+- Total "dip": -0.721% 
+#### NVDA Chart
+![Chart of the last 3 days of NVDA's stockprice](/charts/NVDA.webp)
+___
+
+#### AMZN Info
+- Yahoo Finance Link: [AMZN](https://finance.yahoo.com/quote/AMZN)
+- Name: AMZN
+- Days: 3
+- Total "dip": -0.425% 
+#### AMZN Chart
+![Chart of the last 3 days of AMZN's stockprice](/charts/AMZN.webp)
+___
+
+#### NET Info
+- Yahoo Finance Link: [NET](https://finance.yahoo.com/quote/NET)
+- Name: NET
+- Days: 123
+- Total "dip": -0.329% 
+#### NET Chart
+![Chart of the last 123 days of NET's stockprice](/charts/NET.webp)
+___
+
+#### TTWO Info
+- Yahoo Finance Link: [TTWO](https://finance.yahoo.com/quote/TTWO)
+- Name: TTWO
+- Days: 1
+- Total "dip": -0.297% 
+#### TTWO Chart
+![Chart of the last 1 days of TTWO's stockprice](/charts/TTWO.webp)
+___
+
+#### ADBE Info
+- Yahoo Finance Link: [ADBE](https://finance.yahoo.com/quote/ADBE)
+- Name: ADBE
+- Days: 3
+- Total "dip": -0.276% 
+#### ADBE Chart
+![Chart of the last 3 days of ADBE's stockprice](/charts/ADBE.webp)
+___
+
+#### RSG Info
+- Yahoo Finance Link: [RSG](https://finance.yahoo.com/quote/RSG)
+- Name: RSG
+- Days: 3
+- Total "dip": -0.214% 
+#### RSG Chart
+![Chart of the last 3 days of RSG's stockprice](/charts/RSG.webp)
+___
+
+#### IBM Info
+- Yahoo Finance Link: [IBM](https://finance.yahoo.com/quote/IBM)
+- Name: IBM
+- Days: 1
+- Total "dip": -0.111% 
+#### IBM Chart
+![Chart of the last 1 days of IBM's stockprice](/charts/IBM.webp)
+___
+
+#### AFL Info
+- Yahoo Finance Link: [AFL](https://finance.yahoo.com/quote/AFL)
+- Name: AFL
+- Days: 3
+- Total "dip": -0.061% 
+#### AFL Chart
+![Chart of the last 3 days of AFL's stockprice](/charts/AFL.webp)
 ___
 
 #### ATVI Info
@@ -1040,58 +1094,13 @@ ___
 ![Chart of the last 9 days of ATVI's stockprice](/charts/ATVI.webp)
 ___
 
-#### AVGO Info
-- Yahoo Finance Link: [AVGO](https://finance.yahoo.com/quote/AVGO)
-- Name: AVGO
+#### INTU Info
+- Yahoo Finance Link: [INTU](https://finance.yahoo.com/quote/INTU)
+- Name: INTU
 - Days: 0
 - Total "dip": 0.0% 
-#### AVGO Chart
-![Chart of the last 0 days of AVGO's stockprice](/charts/AVGO.webp)
-___
-
-#### WMT Info
-- Yahoo Finance Link: [WMT](https://finance.yahoo.com/quote/WMT)
-- Name: WMT
-- Days: 0
-- Total "dip": 0.0% 
-#### WMT Chart
-![Chart of the last 0 days of WMT's stockprice](/charts/WMT.webp)
-___
-
-#### MSFT Info
-- Yahoo Finance Link: [MSFT](https://finance.yahoo.com/quote/MSFT)
-- Name: MSFT
-- Days: 0
-- Total "dip": 0.0% 
-#### MSFT Chart
-![Chart of the last 0 days of MSFT's stockprice](/charts/MSFT.webp)
-___
-
-#### ADBE Info
-- Yahoo Finance Link: [ADBE](https://finance.yahoo.com/quote/ADBE)
-- Name: ADBE
-- Days: 0
-- Total "dip": 0.0% 
-#### ADBE Chart
-![Chart of the last 0 days of ADBE's stockprice](/charts/ADBE.webp)
-___
-
-#### COST Info
-- Yahoo Finance Link: [COST](https://finance.yahoo.com/quote/COST)
-- Name: COST
-- Days: 0
-- Total "dip": 0.0% 
-#### COST Chart
-![Chart of the last 0 days of COST's stockprice](/charts/COST.webp)
-___
-
-#### IBM Info
-- Yahoo Finance Link: [IBM](https://finance.yahoo.com/quote/IBM)
-- Name: IBM
-- Days: 0
-- Total "dip": 0.0% 
-#### IBM Chart
-![Chart of the last 0 days of IBM's stockprice](/charts/IBM.webp)
+#### INTU Chart
+![Chart of the last 0 days of INTU's stockprice](/charts/INTU.webp)
 ___
 
 #### SAP.F Info
@@ -1103,29 +1112,20 @@ ___
 ![Chart of the last 0 days of SAP.F's stockprice](/charts/SAP.F.webp)
 ___
 
-#### UNH Info
-- Yahoo Finance Link: [UNH](https://finance.yahoo.com/quote/UNH)
-- Name: UNH
+#### AVGO Info
+- Yahoo Finance Link: [AVGO](https://finance.yahoo.com/quote/AVGO)
+- Name: AVGO
 - Days: 0
 - Total "dip": 0.0% 
-#### UNH Chart
-![Chart of the last 0 days of UNH's stockprice](/charts/UNH.webp)
+#### AVGO Chart
+![Chart of the last 0 days of AVGO's stockprice](/charts/AVGO.webp)
 ___
 
-#### RSG Info
-- Yahoo Finance Link: [RSG](https://finance.yahoo.com/quote/RSG)
-- Name: RSG
+#### V Info
+- Yahoo Finance Link: [V](https://finance.yahoo.com/quote/V)
+- Name: V
 - Days: 0
 - Total "dip": 0.0% 
-#### RSG Chart
-![Chart of the last 0 days of RSG's stockprice](/charts/RSG.webp)
-___
-
-#### CTAS Info
-- Yahoo Finance Link: [CTAS](https://finance.yahoo.com/quote/CTAS)
-- Name: CTAS
-- Days: 0
-- Total "dip": 0.0% 
-#### CTAS Chart
-![Chart of the last 0 days of CTAS's stockprice](/charts/CTAS.webp)
+#### V Chart
+![Chart of the last 0 days of V's stockprice](/charts/V.webp)
 ___
